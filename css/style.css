@@ -1,9 +1,13 @@
+@import "./reset.css";
+
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 /* font-family: 'Kanit', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
-@import "./reset.css";
+body {
+  padding-bottom: 600px;
+}
 
 /* header */
 .header {
@@ -137,4 +141,65 @@ font-family: 'Roboto', sans-serif; */
   .nav__menu___link:hover {
     display: none;
   }
+}
+
+/* INTRODUCAO */
+
+.introduction {
+  background: #141414;
+  box-shadow: inset 0px -120px #fff;
+  width: 100%;
+}
+
+.introduction__container {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: 0 40px;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.introduction__content {
+  align-self: center;
+}
+
+.introduction__title {
+  color: #fff;
+  font-family: "Kanit", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.015em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.introduction__title--red {
+  color: #ff0000;
+}
+
+.introduction__btn {
+  background: linear-gradient(179.24deg, #ff0000 0.65%, #922f2f 143.45%);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  color: #ffdddd;
+  display: inline-block;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Kanit", sans-serif;
+  padding: 16px 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  transition: 0.3s;
+}
+
+.introduction__img___container {
+  padding-top: 32px;
+}
+
+.introduction__img {
+  height: 100%;
+  border-radius: 4px;
+  object-fit: cover;
 }
