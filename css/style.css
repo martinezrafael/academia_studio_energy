@@ -23,7 +23,7 @@ body {
   background: linear-gradient(#ff0000, #922f2f);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
   color: #ffdddd;
-  border-radius: 4px;
+  border-radius: 4px; 
   font-weight: 600;
   font-size: 20px;
   font-family: "Kanit", sans-serif;
@@ -39,7 +39,7 @@ body {
   color: #fff;
 }
 
-.enrollmentButton--dblock {
+.enrollmentButton--d-inlineblock {
   display: inline-block;
 }
 
@@ -110,58 +110,13 @@ body {
   width: 100%;
 }
 
-@media (max-width: 800px) {
-  .header__container {
-    justify-content: center;
-  }
-
-  .logo__link {
-    margin: 12px 0;
-  }
-
-  .nav {
-    justify-content: center;
-  }
-
-  .nav__menu {
-    justify-content: center;
-    text-align: center;
-  }
-
-  .nav__menu___item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #3d3d3d;
-    border-radius: 4px;
-
-    height: 80px;
-    padding: 12px 22px;
-    width: 70%;
-  }
-
-  .btn__register {
-    font-size: 28px;
-    padding: 32px;
-    text-align: center;
-    width: 90%;
-  }
-
-  .nav__menu___link::after {
-    display: none;
-  }
-
-  .nav__menu___link:hover {
-    display: none;
-  }
-}
 
 /* INTRODUCAO */
-
 .introduction {
   background: #141414;
   box-shadow: inset 0px -120px #fff;
   width: 100%;
+  margin-bottom: 120px;
 }
 
 .introduction__container {
@@ -191,13 +146,9 @@ body {
   color: #ff0000;
 }
 
-
-.introduction__img___container {
-  padding-top: 32px;
-}
-
 .introduction__img {
   height: 100%;
   border-radius: 4px;
   object-fit: cover;
+  margin-top: 32px;
 }
