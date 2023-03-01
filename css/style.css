@@ -1,15 +1,50 @@
+/* RESET CSS */
 @import "./reset.css";
 
+
+/* FONTES */
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 /* font-family: 'Kanit', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
+/* CSS GLOBAL */
+html, body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
 body {
   padding-bottom: 600px;
 }
 
-/* header */
+/* BOTÃO DE CHAMADA PARA MATRICULA */
+.enrollmentButton {
+  background: linear-gradient(#ff0000, #922f2f);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  color: #ffdddd;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Kanit", sans-serif;
+  padding: 16px 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  transition: 0.3s;
+}
+
+.enrollmentButton:hover {
+  background: #ff0000;
+  color: #fff;
+}
+
+.enrollmentButton--dblock {
+  display: inline-block;
+}
+
+
+/* HEADER */
 .header {
   background: #141414;
   width: 100%;
@@ -17,7 +52,6 @@ body {
 
 .header__container {
   align-items: center;
-  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
@@ -27,6 +61,7 @@ body {
   padding: 18px 0;
 }
 
+/* MENU PRINCIPAL DE NAVEGAÇÃO */
 .nav {
   align-items: center;
   display: flex;
@@ -43,11 +78,6 @@ body {
 }
 
 .nav__menu___item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.015em;
   text-transform: uppercase;
@@ -59,6 +89,10 @@ body {
   padding: 16px 0;
   text-decoration: none;
   position: relative;
+}
+
+.nav__menu___link:hover {
+  color: #ff0000;
 }
 
 .nav__menu___link::after {
@@ -74,30 +108,6 @@ body {
 
 .nav__menu___link:hover::after {
   width: 100%;
-}
-
-.nav__menu___link:hover {
-  color: #ff0000;
-}
-
-.btn__register {
-  background: linear-gradient(179.24deg, #ff0000 0.65%, #922f2f 143.45%);
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
-  color: #ffdddd;
-  border-radius: 4px;
-  font-weight: 600;
-  font-size: 20px;
-  font-family: "Kanit", sans-serif;
-  padding: 16px 32px;
-  text-decoration: none;
-  text-transform: uppercase;
-
-  transition: 0.3s;
-}
-
-.btn__register:hover {
-  background: #ff0000;
-  color: #fff;
 }
 
 @media (max-width: 800px) {
@@ -119,12 +129,15 @@ body {
   }
 
   .nav__menu___item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #3d3d3d;
     border-radius: 4px;
 
     height: 80px;
     padding: 12px 22px;
-    width: 80%;
+    width: 70%;
   }
 
   .btn__register {
@@ -178,21 +191,6 @@ body {
   color: #ff0000;
 }
 
-.introduction__btn {
-  background: linear-gradient(179.24deg, #ff0000 0.65%, #922f2f 143.45%);
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
-  color: #ffdddd;
-  display: inline-block;
-  border-radius: 4px;
-  font-weight: 600;
-  font-size: 20px;
-  font-family: "Kanit", sans-serif;
-  padding: 16px 32px;
-  text-decoration: none;
-  text-transform: uppercase;
-
-  transition: 0.3s;
-}
 
 .introduction__img___container {
   padding-top: 32px;
