@@ -1,5 +1,6 @@
 /* RESET CSS */
 @import "./reset.css";
+@import './origamid-menu.css';
 
 
 /* FONTES */
@@ -91,7 +92,7 @@ body {
   position: relative;
 }
 
-.nav__menu___link:hover {
+.nav__menu___link:hover, .ativo {
   color: #ff0000;
 }
 
@@ -106,9 +107,12 @@ body {
   position: absolute;
 }
 
-.nav__menu___link:hover::after {
+.nav__menu___link:hover::after,
+.ativo::after {
   width: 100%;
 }
+
+
 
 
 /* INTRODUCAO */
