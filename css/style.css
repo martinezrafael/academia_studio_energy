@@ -36,6 +36,16 @@ body {
   color: #ff0000;
 }
 
+.subtitle {
+  color: #141414;
+  font-family: 'Kanit', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.015em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
 /* BOTÃO DE CHAMADA PARA MATRICULA */
 .enrollmentButton {
   background: linear-gradient(#ff0000, #922f2f);
@@ -189,12 +199,12 @@ body {
   margin: 0 auto;
 }
 
-
 .activities__carousel {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 40px;
+  margin-bottom: 60px;
 }
 
 .activities__carousel___item {
@@ -234,4 +244,46 @@ body {
   background: transparent;
   border: none;
   cursor: pointer;
+}
+
+.activities__details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.activities__details___content {
+  align-self: center;
+}
+
+.activities__details___paragraph {
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.33;
+  color: #525252;
+}
+
+.activities__benefits___list {
+  margin-bottom: 40px;
+}
+
+.activities__benefits___item {
+  margin-bottom: 16px;
+  font-size: 18px;
+  text-transform: uppercase;
+  display: flex;
+  color: #525252;
+  font-weight: 700;
+  align-items: center;
+  gap: 8px;
+}
+
+.activities__benefits___item::before {
+  border-radius: 1px;
+  content:"";
+  display: block;
+  height: 6px;
+  width: 12px;
+  background: linear-gradient(179.24deg, #FF0000 0.65%, #922F2F 143.45%);;
 }
