@@ -193,15 +193,9 @@ body {
 .activities__carousel {
   display: flex;
   align-items: center;
-
   justify-content: center;
   gap: 40px;
 }
-
-.activities__carousel___list {
-  overflow: auto;
-}
-
 
 .activities__carousel___item {
   border-radius: 4px;
