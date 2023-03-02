@@ -49,6 +49,9 @@ body {
 .header {
   background: #141414;
   width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
 
 .header__container {
