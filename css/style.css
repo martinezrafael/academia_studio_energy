@@ -156,3 +156,38 @@ body {
   object-fit: cover;
   margin-top: 32px;
 }
+
+/* MODALIDADES */
+
+.activities__carousel___item {
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  height: 416px;
+  width: 360px;
+  position: relative;
+}
+
+.activities__carousel___img {
+  height: 100%;
+  width: 100%;
+}
+
+.activities__carousel___tag {
+  background: linear-gradient(#FF0000,#922F2F);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+  padding: 26px 0;
+  width: 100%;
+}
+
+.activities__carousel___tagName {
+  color: #ffdddd;
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 24px;
+}
