@@ -29,10 +29,6 @@
 	/* border-top: 2px solid; */
 }
 
-/* #origamid-menu li:last-of-type {
-	border-bottom: 2px solid;
-} */
-
 #origamid-menu li a {
 	display: block;
 	float: none;
@@ -42,10 +38,10 @@
 	min-width: 140px;
 }
 
-#origamid-menu li a:hover {
+/* #origamid-menu li a:hover {
 	background: white;
 	color: black;
-}
+} */
 
 /* Menu Icon */
 #origamid-icon {

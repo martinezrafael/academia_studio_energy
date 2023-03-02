@@ -1,4 +1,4 @@
-$('nav').origamidMenu({
+$('.nav').origamidMenu({
 	breakpoint: 960,
 	top: 52,
 	background: "#141414",
