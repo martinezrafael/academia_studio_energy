@@ -13,91 +13,173 @@
 
 <body>
   <header class="header">
+
     <div class="header__container">
-      <a href="./" class="logo__link"><img src="./img/studio-energy.svg" alt="Studio Energy" /></a>
-      <nav class="nav">
+
+      <a href="./" class="logo__anchor">
+        <img class="logo__img" src="./img/studio-energy.svg" alt="Academia Studio Energy" />
+      </a>
+
+      <nav class="nav" aria-label="primaria">
         <ul class="nav__menu">
-          <li class="nav__menu___item"><a href="#modalidades" class="nav__menu___link">Modalidades</a></li>
-          <li class="nav__menu___item"><a href="#horarios" class="nav__menu___link">Horários</a></li>
-          <li class="nav__menu___item"><a href="#precos" class="nav__menu___link">Preços</a></li>
-          <li class="nav__menu___item"><a href="#localizacao" class="nav__menu___link">Localização</a></li>
+          <li class="nav__menu___item">
+            <a href="#modalidades" class="nav__menu___link">
+              Modalidades
+            </a>
+          </li>
+          <li class="nav__menu___item">
+            <a href="#horarios" class="nav__menu___link">
+              Horários
+            </a>
+          </li>
+          <li class="nav__menu___item">
+            <a href="#precos" class="nav__menu___link">
+              Preços
+            </a>
+          </li>
+          <li class="nav__menu___item">
+            <a href="#localizacao" class="nav__menu___link">
+              Localização
+            </a>
+          </li>
         </ul>
-        <a href="#" class="enrollmentButton">Matricule-se já</a>
+        <a href="#" class="enrollmentCall__button">
+          Matricule-se já
+        </a>
       </nav>
+
     </div>
+
   </header>
 
   <main class="introduction">
+
     <div class="introduction__container">
+
       <div class="introduction__content">
-        <h1 class="introduction__title">Comece a treinar pagando à partir de <span class="introduction__title introduction__title--red">90 reais mensais</span></h1>
-        <a href="#" class="enrollmentButton enrollmentButton--d-inlineblock">Matricule-se já</a>
+        <h1 class="introduction__title">
+          Comece a treinar pagando à partir de
+          <span class="introduction__title introduction__title--red">
+            90 reais mensais
+          </span>
+        </h1>
+        <a href="#" class="enrollmentCall__button enrollmentCall__button--d-inlineblock">
+          Matricule-se já
+        </a>
       </div>
+
       <div class="introduction__img___container">
         <img class="introduction__img" src="./img/banner-introducao.jpg" alt="Comece a treinar pagando a partir de R$90,00 mensais">
       </div>
+
     </div>
+
   </main>
 
   <section class="activities" id="modalidades">
+
+    <div class="activities__header">
+
+      <h2 class="title title--black title__activities">
+        Modalidades
+        <span class="title__decorator">.</span>
+      </h2>
+
+    </div>
+
     <div class="activities__container">
-      <h2 class="title title--black title__activities">Modalidades<span class="title__decorator">.</span></h2>
+
       <div class="activities__carousel">
-        <button class="activities__carousel___btn">
+
+        <button class="activities__carousel___btn activities__carousel___btn--left">
           <img src="./img/arrow-left.svg" alt="Seta para a esquerda">
         </button>
+
         <ul class="activities__carousel___list">
+
           <li class="activities__carousel___item">
             <img class="activities__carousel___img" src="./img/musculacao.png" alt="Musculação">
             <span class="activities__carousel___tag">
-              <p class="activities__carousel___tagName">Musculação</p>
+              <p class="activities__carousel___tagName">
+                Musculação
+              </p>
             </span>
           </li>
+
           <li class="activities__carousel___item">
             <img class="activities__carousel___img" src="./img/boxe.png" alt="Boxe">
             <span class="activities__carousel___tag">
-              <p class="activities__carousel___tagName">Boxe</p>
+              <p class="activities__carousel___tagName">
+                Boxe
+              </p>
             </span>
           </li>
+
           <li class="activities__carousel___item">
             <img class="activities__carousel___img" src="./img/yoga.png" alt="Yoga">
             <span class="activities__carousel___tag">
-              <p class="activities__carousel___tagName">Yoga</p>
+              <p class="activities__carousel___tagName">
+                Yoga
+              </p>
             </span>
           </li>
+
           <li class="activities__carousel___item">
             <img class="activities__carousel___img" src="./img/fitdance.png" alt="Fit Dance">
             <span class="activities__carousel___tag">
-              <p class="activities__carousel___tagName">Fit Dance</p>
+              <p class="activities__carousel___tagName">
+                Fit Dance
+              </p>
             </span>
           </li>
+
         </ul>
-        <button class="activities__carousel___btn">
+
+        <button class="activities__carousel___btn activities__carousel___btn--right">
           <img src="./img/arrow-right.svg" alt="Seta para a direita">
         </button>
+
       </div>
 
-      <div class="activities__details">
-        <div class="activities__details___img">
-          <img src="./img/musculacao-detalhes.png" alt="Detalhes sobre a musculação">
-        </div>
-        <div class="activities__details___content">
-          <h2 class="title title--black">Musculação<span class="title__decorator">.</span></h2>
-          <p class="activities__details___paragraph">
-            A musculação é umas das atividades físicas mais praticadas nas academias. Os focos principais são a hipertrofia muscular, ganho de força e a busca por um corpo harmônico.
-          </p>
-          <h3 class="subtitle">Benefícios</h3>
-          <ul class="activities__benefits___list">
-            <li class="activities__benefits___item">Fortalecimento Muscular</li>
-            <li class="activities__benefits___item">Emagrecimento</li>
-            <li class="activities__benefits___item">Reduz os sintomas da ansiedade</li>
-          </ul>
-          <a href="#" class="enrollmentButton enrollmentButton--d-inlineblock">Matricule-se já</a>
-        </div>
-      </div>
     </div>
-  </section>
 
+    <div class="activities__details">
+
+      <div class="activities__details___img">
+        <img src="./img/musculacao-detalhes.png" alt="Detalhes sobre a musculação">
+      </div>
+
+      <div class="activities__details___content">
+
+        <h2 class="title title--black">
+          Musculação<span class="title__decorator">.</span>
+        </h2>
+
+        <p class="activities__details___paragraph">
+          A musculação é umas das atividades físicas mais praticadas nas
+          academias. Os focos principais são a hipertrofia muscular, ganho
+          de força e a busca por um corpo harmônico.
+        </p>
+
+        <h3 class="subtitle">
+          Benefícios
+        </h3>
+
+        <ul class="activities__benefits___list">
+          <li class="activities__benefits___item">Fortalecimento Muscular</li>
+          <li class="activities__benefits___item">Emagrecimento</li>
+          <li class="activities__benefits___item">Reduz os sintomas da ansiedade</li>
+        </ul>
+
+        <a href="#" class="enrollmentCall__button enrollmentCall__button--d-inlineblock">
+          Matricule-se já
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
   <script src="https://code.jquery.com/jquery-3.6.3.min.js
   "></script>
   <script src="./js/origamid-menu.js"></script>

@@ -1,5 +1,7 @@
 /* RESET CSS */
 @import "./reset.css";
+
+/* MENU MOBILE */
 @import './origamid-menu.css';
 
 
@@ -9,45 +11,58 @@
 /* font-family: 'Kanit', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
+
 /* CSS GLOBAL */
 html, body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
-body {
-  padding-bottom: 600px;
-}
-
+/* TITULO PADRÃO DAS SEÇÕES DO SITE */
 .title {
   font-family: 'Kanit', sans-serif;
   font-size: 40px;
   font-weight: 700;
   letter-spacing: 0.015em;
-  text-transform: uppercase;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .title--black {
   color: #141414;
 }
 
+.title--white {
+  color: #fff;
+}
+
 .title__decorator {
   color: #ff0000;
 }
+
+/* SUBTITULO PADRÃO DO SITE */
 
 .subtitle {
   color: #141414;
   font-family: 'Kanit', sans-serif;
   font-size: 32px;
+  line-height: 1.5;
   font-weight: 700;
   letter-spacing: 0.015em;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 
+.subtitle--black {
+  color: #141414;
+}
+
+.subtitle--white {
+  color: #fff;
+}
+
 /* BOTÃO DE CHAMADA PARA MATRICULA */
-.enrollmentButton {
+.enrollmentCall__button {
   background: linear-gradient(#ff0000, #922f2f);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
   color: #ffdddd;
@@ -62,12 +77,12 @@ body {
   transition: 0.3s;
 }
 
-.enrollmentButton:hover {
+.enrollmentCall__button:hover {
   background: #ff0000;
   color: #fff;
 }
 
-.enrollmentButton--d-inlineblock {
+.enrollmentCall__button--d-inlineblock {
   display: inline-block;
 }
 
@@ -142,9 +157,6 @@ body {
   width: 100%;
 }
 
-@media(max-width:800px){
-  
-}
 
 
 
@@ -196,26 +208,30 @@ body {
   width: 100%;
 }
 
+.activities__header {
+  width: 80%;
+  margin: auto;
+}
+
 .activities__container {
   box-sizing: border-box;
-  max-width: 1160px;
-  margin: 0 auto;
 }
 
 .activities__carousel {
+  margin-bottom: 60px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 40px;
-  margin-bottom: 60px;
 }
 
 .activities__carousel___item {
   border-radius: 4px;
   cursor: pointer;
   display: inline-block;
-  height: 416px;
-  width: 360px;
+  height: 300px;
+  width: 280px;
   position: relative;
 }
 
@@ -253,6 +269,9 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
+  max-width: 1160px;
+  box-sizing: border-box;
+  margin: auto;
 }
 
 .activities__details___content {

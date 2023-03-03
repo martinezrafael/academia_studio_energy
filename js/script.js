@@ -17,4 +17,3 @@ function ativarLink(link){
 }
 
 
-links.forEach(ativarLink)
