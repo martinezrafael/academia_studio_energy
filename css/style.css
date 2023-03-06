@@ -302,7 +302,8 @@ body {
 
 .classSchedule {
   background: #141414;
-  padding-top: 80px;
+  padding: 80px 0;
+  margin-bottom: 120px;
 }
 
 .classSchedule__container {
@@ -314,7 +315,6 @@ body {
   margin-bottom: 20px;
   max-width: 1160px;
   margin: auto;
-  margin-bottom: 600vh;
 }
 
 .classSchedule__daysWeek {
@@ -339,6 +339,12 @@ body {
   border: 4px;
   padding: 12px 24px;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.classSchedule__daysWeek___btn:hover {
+  background: #fff;
+  color: #ff0000;
 }
 
 .classSchedule__activities___schedules {
@@ -346,6 +352,21 @@ body {
   color: #fff;
   font-size: 18px;
   text-transform: uppercase;
+}
+
+.classSchedule__activities {
+  display: grid;
+  grid-template-rows: 3;
+  gap: 40px;
+}
+
+.classSchedule__activities___row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.classSchedule__activities___schedules {
   margin-bottom: 20px;
 }
 
@@ -355,5 +376,78 @@ body {
 }
 
 .classSchedule__activities___btn {
+  background: none;
+  box-sizing: border-box;
+  border: 1px solid #ff0000;
+  color: #ff0000;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
   border-radius: 4px;
+  padding: 16px 32px;
+}
+
+.classSchedule__activities___btn:hover {
+  background: linear-gradient(#ff0000, #922f2f);
+  border: none;
+  color: #ffdddd;
+}
+
+/* PREÇOS */
+
+.prices__carousel___list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.prices__carousel___item {
+  background: #141414;
+  border-radius: 4px;
+  text-align: center;
+  padding: 20px;
+}
+
+.price__monthly::after {
+  content: "";
+  display: block;
+  background: #292929;
+  height: 2px;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.price__monthly___title,
+.price__annual___title {
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: 0.015em;
+  line-height: 1.33;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+.price__monthly__value,
+.price__annual__value {
+  color: #ff0000;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.price__annual__value {
+  margin-bottom: 8px;
+}
+
+.price__annual {
+  margin-bottom: 20px;
+}
+
+.price__annual___observation {
+  color: #fff;
+  font-size: 12px;
+}
+
+.prices__carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
