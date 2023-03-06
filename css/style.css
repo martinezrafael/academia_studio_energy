@@ -398,24 +398,26 @@ body {
 .prices {
   margin: auto;
   margin-bottom: 120px;
-  max-width: 1160px;
 }
 
 .prices__container {
+  max-width: 1636px;
+  margin: 0 auto;
   margin-bottom: 40px;
 }
 
 .prices__carousel___list {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 20px;
 }
 
 .prices__carousel___item {
   background: #141414;
   border-radius: 4px;
   text-align: center;
-  padding: 20px;
+  padding: 40px;
+  width: 300px;
 }
 
 .price__monthly::after {
@@ -427,7 +429,14 @@ body {
   width: 100%;
 }
 
-.price__monthly___title,
+.price__monthly___title {
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.015em;
+  line-height: 1.33;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
 .price__annual___title {
   color: #fff;
   font-size: 24px;
@@ -436,7 +445,11 @@ body {
   margin-bottom: 4px;
   text-transform: uppercase;
 }
-.price__monthly__value,
+.price__monthly__value {
+  color: #ff7575;
+  font-size: 24px;
+  font-weight: 700;
+}
 .price__annual__value {
   color: #ff0000;
   font-size: 40px;
@@ -492,4 +505,53 @@ body {
   height: 6px;
   width: 12px;
   background: linear-gradient(#ff0000, #922f2f);
+}
+
+/* PORQUE TREINAR NA STUDIO */
+
+.differentials {
+  background: #141414;
+  box-shadow: inset 0px -120px #fff, inset 0px 120px #fff;
+  margin-bottom: 120px;
+}
+
+.differentials__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.differentials__content {
+  align-self: center;
+  max-width: 480px;
+}
+
+.differentials__item {
+  margin-bottom: 20px;
+}
+
+.differentials__item h4 {
+  font-family: "Kanit", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.differentials__item h4::before {
+  border-radius: 1px;
+  content: "";
+  display: block;
+  height: 6px;
+  width: 12px;
+  background: linear-gradient(#ff0000, #922f2f);
+}
+
+.differentials__item p {
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.2;
 }
