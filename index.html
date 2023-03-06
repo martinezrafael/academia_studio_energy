@@ -57,9 +57,9 @@
     <div class="introduction__container">
 
       <div class="introduction__content">
-        <h1 class="introduction__title">
+        <h1 class="title title--white">
           Comece a treinar pagando à partir de
-          <span class="introduction__title introduction__title--red">
+          <span class="title--red">
             90 reais mensais
           </span>
         </h1>
@@ -78,24 +78,18 @@
 
   <section class="activities" id="modalidades">
 
-    <div class="activities__header">
-
-      <h2 class="title title--black title__activities">
-        Modalidades
-        <span class="title__decorator">.</span>
-      </h2>
-
-    </div>
-
     <div class="activities__container">
 
+      <h2 class="title title--black title__activities">
+        Modalidades<span class="title__decorator">.</span>
+      </h2>
+
       <div class="activities__carousel">
-
-        <button class="activities__carousel___btn activities__carousel___btn--left">
-          <img src="./img/arrow-left.svg" alt="Seta para a esquerda">
-        </button>
-
         <ul class="activities__carousel___list">
+
+          <button class="activities__carousel___btn activities__carousel___btn--left">
+            <img src="./img/arrow-left.svg" alt="Seta para a esquerda">
+          </button>
 
           <li class="activities__carousel___item">
             <img class="activities__carousel___img" src="./img/musculacao.png" alt="Musculação">
@@ -133,53 +127,91 @@
             </span>
           </li>
 
-        </ul>
+          <button class="activities__carousel___btn activities__carousel___btn--right">
+            <img src="./img/arrow-right.svg" alt="Seta para a direita">
+          </button>
 
-        <button class="activities__carousel___btn activities__carousel___btn--right">
-          <img src="./img/arrow-right.svg" alt="Seta para a direita">
-        </button>
+        </ul>
 
       </div>
 
-    </div>
 
-    <div class="activities__details">
+      <div class="activities__details">
 
-      <div class="activities__details___img">
-        <img src="./img/musculacao-detalhes.png" alt="Detalhes sobre a musculação">
-      </div>
+        <div class="activities__details___img">
+          <img src="./img/musculacao-detalhes.png" alt="Detalhes sobre a musculação">
+        </div>
 
-      <div class="activities__details___content">
+        <div class="activities__details___content">
 
-        <h2 class="title title--black">
-          Musculação<span class="title__decorator">.</span>
-        </h2>
+          <h2 class="title title--black">
+            Musculação<span class="title__decorator">.</span>
+          </h2>
 
-        <p class="activities__details___paragraph">
-          A musculação é umas das atividades físicas mais praticadas nas
-          academias. Os focos principais são a hipertrofia muscular, ganho
-          de força e a busca por um corpo harmônico.
-        </p>
+          <p class="activities__details___paragraph">
+            A musculação é umas das atividades físicas mais praticadas nas
+            academias. Os focos principais são a hipertrofia muscular, ganho
+            de força e a busca por um corpo harmônico.
+          </p>
 
-        <h3 class="subtitle">
-          Benefícios
-        </h3>
+          <h3 class="subtitle">
+            Benefícios
+          </h3>
 
-        <ul class="activities__benefits___list">
-          <li class="activities__benefits___item">Fortalecimento Muscular</li>
-          <li class="activities__benefits___item">Emagrecimento</li>
-          <li class="activities__benefits___item">Reduz os sintomas da ansiedade</li>
-        </ul>
+          <ul class="activities__benefits___list">
+            <li class="activities__benefits___item">Fortalecimento Muscular</li>
+            <li class="activities__benefits___item">Emagrecimento</li>
+            <li class="activities__benefits___item">Reduz os sintomas da ansiedade</li>
+          </ul>
 
-        <a href="#" class="enrollmentCall__button enrollmentCall__button--d-inlineblock">
-          Matricule-se já
-        </a>
+          <a href="#" class="enrollmentCall__button enrollmentCall__button--d-inlineblock">
+            Matricule-se já
+          </a>
+
+        </div>
 
       </div>
 
     </div>
 
   </section>
+
+  <section class="classSchedule">
+
+    <div class="classSchedule__container">
+      <h2 class="title title--white">
+        Horário das aulas<span class="title__decorator">.</span>
+      </h2>
+    </div>
+
+    <div class="classSchedule__calendar">
+      <div class="classSchedule__daysWeek">
+        <button value="segunda" class="classSchedule__daysWeek___btn">Segunda Feira</button>
+        <button value="terca" class="classSchedule__daysWeek___btn">Terça Feira</button>
+        <button value="quarta" class="classSchedule__daysWeek___btn">Quarta Feira</button>
+        <button value="quinta" class="classSchedule__daysWeek___btn">Quinta Feira</button>
+        <button value="sexta" class="classSchedule__daysWeek___btn">Sexta Feira</button>
+      </div>
+
+      <div class="classSchedule__activities">
+
+        <div class="classSchedule__activities___card">
+          <h3 class="subtitle subtitle--white">Musculação</h3>
+
+          <div class="classSchedule__activities___schedules">
+            <p>Horários</p>
+            <p class="classSchedule__activities___schedule--schedule1">06:00 - 12:00</p>
+            <p class="classSchedule__activities___schedule--schedule2">14:00 - 21:00</p>
+          </div>
+
+          <button class="classSchedule__activities___btn">Matricule-se já</button>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
   <script src="https://code.jquery.com/jquery-3.6.3.min.js
   "></script>
   <script src="./js/origamid-menu.js"></script>
