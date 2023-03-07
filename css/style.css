@@ -566,7 +566,7 @@ body {
 
 .customerOpinion__container {
   max-width: 1160px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .customerOpinion__list {
@@ -597,10 +597,16 @@ body {
 }
 
 /* NOSSA HISTÓRIA */
+.ourStory {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
 .ourStory__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
+  margin-bottom: 120px;
 }
 
 .ourStory__content {
@@ -612,4 +618,54 @@ body {
   color: #525252;
   font-size: 24px;
   line-height: 1.166;
+  margin-bottom: 20px;
+}
+
+/* QUEM CRIOU A STUDIO ENERGY */
+.whoCreated {
+  background: #141414;
+  margin-bottom: 120px;
+  padding: 80px 0;
+}
+
+.whoCreated__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.whoCreated__content {
+  align-self: center;
+}
+
+.whoCreated__content p {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+  line-height: 1.166;
+}
+
+/* LOCALIZAÇÃO */
+
+.location {
+  background: #141414;
+}
+
+.location__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.location__info {
+  align-self: center;
+  color: #fff;
+}
+
+.location__map iframe {
+  border-radius: 4px;
+  height: 456px;
+  width: 757px;
 }
