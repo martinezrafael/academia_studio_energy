@@ -1,0 +1,38 @@
+.customerOpinion {
+  background: #141414;
+  box-sizing: border-box;
+  padding: 80px 0;
+  margin-bottom: 120px;
+}
+
+.customerOpinion__container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.customerOpinion__list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.customerOpinion__item {
+  max-width: 360px;
+  text-align: center;
+  color: #fff;
+}
+.customerOpinion__img {
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.customerOpinion__content,
+.customerOpinion__name {
+  font-size: 18px;
+  line-height: 1.11;
+  margin-bottom: 12px;
+}
+
+.customerOpinion__name {
+  font-weight: 600;
+}

@@ -1,0 +1,36 @@
+.introduction {
+  background: #141414;
+  box-shadow: inset 0px -120px #fff;
+  width: 100%;
+  margin-bottom: 120px;
+}
+
+.introduction__container {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: 0 40px;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.introduction__content {
+  align-self: center;
+}
+
+.introduction__title {
+  color: #fff;
+  font-family: "Kanit", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.015em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.introduction__img {
+  height: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+  margin-top: 32px;
+}

@@ -1,0 +1,92 @@
+.classSchedule {
+  background: #141414;
+  padding: 80px 0;
+  margin-bottom: 120px;
+}
+
+.classSchedule__container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.classSchedule__calendar {
+  margin-bottom: 20px;
+  max-width: 1160px;
+  margin: auto;
+}
+
+.classSchedule__daysWeek {
+  margin-bottom: 20px;
+}
+
+.classSchedule__activities___card {
+  background: #000;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 40px;
+}
+
+.classSchedule__daysWeek___btn {
+  background: linear-gradient(#ff0000, #922f2f);
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  border: 4px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.classSchedule__daysWeek___btn:hover {
+  background: #fff;
+  color: #ff0000;
+}
+
+.classSchedule__activities___schedules {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.classSchedule__activities {
+  display: grid;
+  grid-template-rows: 3;
+  gap: 40px;
+}
+
+.classSchedule__activities___row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.classSchedule__activities___schedules {
+  margin-bottom: 20px;
+}
+
+.classSchedule__activities___schedules p {
+  line-height: 1.11;
+  margin-bottom: 4px;
+}
+
+.classSchedule__activities___btn {
+  background: none;
+  box-sizing: border-box;
+  border: 1px solid #ff0000;
+  color: #ff0000;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+
+.classSchedule__activities___btn:hover {
+  background: linear-gradient(#ff0000, #922f2f);
+  border: none;
+  color: #ffdddd;
+}

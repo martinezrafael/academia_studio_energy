@@ -1,0 +1,111 @@
+.prices {
+  margin: auto;
+  margin-bottom: 120px;
+}
+
+.prices__container {
+  max-width: 1636px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.prices__carousel___list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.prices__carousel___item {
+  background: #141414;
+  border-radius: 4px;
+  text-align: center;
+  padding: 40px;
+  width: 300px;
+}
+
+.price__monthly::after {
+  content: "";
+  display: block;
+  background: #292929;
+  height: 2px;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.price__monthly___title {
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.015em;
+  line-height: 1.33;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+.price__annual___title {
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: 0.015em;
+  line-height: 1.33;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+.price__monthly__value {
+  color: #ff7575;
+  font-size: 24px;
+  font-weight: 700;
+}
+.price__annual__value {
+  color: #ff0000;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.price__annual__value {
+  margin-bottom: 8px;
+}
+
+.price__annual {
+  margin-bottom: 20px;
+}
+
+.price__annual___observation {
+  color: #fff;
+  font-size: 12px;
+}
+
+.prices__carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prices__paymentOptions {
+  background: #141414;
+  border-radius: 4px;
+  max-width: 1160px;
+  margin: auto;
+  padding: 40px;
+}
+
+.prices__paymentOptions___list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.prices__paymentOptions___item {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  gap: 8px;
+}
+
+.prices__paymentOptions___item::before {
+  border-radius: 1px;
+  content: "";
+  display: block;
+  height: 6px;
+  width: 12px;
+  background: linear-gradient(#ff0000, #922f2f);
+}

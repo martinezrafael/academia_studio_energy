@@ -1,0 +1,35 @@
+.location {
+  background: #141414;
+  padding: 80px 0;
+}
+
+.location__container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.location__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.location__info {
+  align-self: center;
+  color: #fff;
+  max-width: 360px;
+}
+
+.location__map iframe {
+  border-radius: 4px;
+  height: 456px;
+  width: 757px;
+}
+
+.location__info___address,
+.location__info___tel,
+.location__info___openingHours {
+  font-size: 24px;
+  margin-bottom: 40px;
+  line-height: 1.33;
+}

@@ -1,0 +1,24 @@
+.whoCreated {
+  background: #141414;
+  margin-bottom: 120px;
+  padding: 80px 0;
+}
+
+.whoCreated__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.whoCreated__content {
+  align-self: center;
+}
+
+.whoCreated__content p {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+  line-height: 1.166;
+}
