@@ -3,6 +3,7 @@
 @import "./utilies/components.css";
 @import "./global/header.css";
 @import "./home/introduction.css";
+@import "./slide.css";
 @import "./home/activities.css";
 @import "./home/schedules.css";
 @import "./home/prices.css";

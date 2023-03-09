@@ -1,0 +1,39 @@
+body {
+  margin: 0px;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.slide-wrapper {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slide {
+  display: flex;
+}
+
+.slide:hover {
+  will-change: transform;
+}
+
+.slide li {
+  flex-shrink: 0;
+  margin: 0 20px;
+}
+
+.arrow-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
