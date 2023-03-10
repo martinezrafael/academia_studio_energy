@@ -1,39 +1,26 @@
-body {
-  margin: 0px;
-}
-
-ul {
-  padding: 0px;
-  margin: 0px;
-  list-style: none;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
-.slide-wrapper {
-  display: flex;
-  align-items: center;
+.slide__activities___wrapper,
+.slide__prices___wrapper {
   overflow: hidden;
 }
 
-.slide {
+.slide__activities,
+.slide__prices {
   display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
-.slide:hover {
+.slide__activities:hover,
+.slide__prices:hover {
   will-change: transform;
 }
 
-.slide li {
+.slide__activities li,
+.slide__prices li {
   flex-shrink: 0;
-  margin: 0 20px;
 }
 
 .arrow-nav {
   display: flex;
-  align-items: center;
   gap: 20px;
 }
