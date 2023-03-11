@@ -1,10 +1,8 @@
-.slide__activities___wrapper,
 .slide__prices___wrapper,
 .slide__partners___wrapper {
   overflow: hidden;
 }
 
-.slide__activities,
 .slide__prices,
 .slide__partners {
   display: flex;
@@ -12,13 +10,11 @@
   gap: 40px;
 }
 
-.slide__activities:hover,
 .slide__prices:hover,
 .slide__partners:hover {
   will-change: transform;
 }
 
-.slide__activities li,
 .slide__prices li,
 .slide__partners li {
   flex-shrink: 0;

@@ -1,17 +1,20 @@
 import { SlideNav } from "./module/slide.js";
 
-const slideActivities = new SlideNav(
-  ".slide__activities",
-  ".slide__activities___wrapper"
+const slidemodalities = new SlideNav(
+  ".s-modalities__slide",
+  ".s-modalities__slide___wrapper"
 );
 
-slideActivities.init();
-slideActivities.addArrow(".prev__activities", ".next__activities");
+slidemodalities.init();
+slidemodalities.addArrow(".s-prev__modalities", ".s-next__modalities");
 
-const slidePrices = new SlideNav(".slide__prices", ".slide__prices___wrapper");
+const slideprices = new SlideNav(
+  ".s-prices__slide",
+  ".s-prices__slide___wrapper"
+);
 
-slidePrices.init();
-slidePrices.addArrow(".prev__prices", ".next__prices");
+slideprices.init();
+slideprices.addArrow(".s-prev__prices", ".s-next__prices");
 
 const slidePartners = new SlideNav(
   ".slide__partners",

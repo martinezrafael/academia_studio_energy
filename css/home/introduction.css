@@ -1,21 +1,24 @@
-.introduction {
+.s-introduction {
   background: #141414;
   box-shadow: inset 0px -120px #fff;
   margin-bottom: 60px;
   padding: 80px 0;
 }
-.introduction__container {
+
+.s-introduction__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   max-width: 1160px;
   margin: 0 auto;
 }
-.introduction__content {
+
+.s-introduction__content {
   align-self: center;
   max-width: 460px;
 }
-.introduction__image {
+
+.introduction__image___wrapper img {
   height: 100%;
   border-radius: 4px;
   object-fit: cover;
