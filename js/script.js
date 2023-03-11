@@ -16,10 +16,10 @@ const slideprices = new SlideNav(
 slideprices.init();
 slideprices.addArrow(".s-prev__prices", ".s-next__prices");
 
-const slidePartners = new SlideNav(
-  ".slide__partners",
-  ".slide__partners___wrapper"
+const slidepartners = new SlideNav(
+  ".s-partners__slide",
+  ".s-partners__slide___wrapper"
 );
 
-slidePartners.init();
-slidePartners.addArrow(".prev__partners", ".next__partners");
+slidepartners.init();
+slidepartners.addArrow(".s-prev__partners", ".s-next__partners");
