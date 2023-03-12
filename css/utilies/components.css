@@ -62,3 +62,6 @@
   background: transparent;
   border: none;
 }
+
+@media (max-width: 800px) {
+}

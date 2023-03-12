@@ -58,6 +58,7 @@
 @media (max-width: 800px) {
   .s-differentials {
     box-shadow: none;
+    padding: 80px 40px;
     width: 100%;
   }
 
@@ -67,5 +68,10 @@
 
   .s-differentials__image___wrapper {
     display: none;
+  }
+
+  .s-differentials__content {
+    align-self: center;
+    max-width: 100%;
   }
 }

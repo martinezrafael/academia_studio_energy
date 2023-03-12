@@ -83,16 +83,12 @@
 @media (max-width: 800px) {
   .s-schedules__days ul {
     flex-direction: column;
-  }
-
-  .s-schedules__days ul li {
-    margin-bottom: 20px;
-    padding: 24px 48px;
-    width: 80%;
+    align-items: center;
   }
 
   .s-schedules__classes__list li {
-    height: 266px;
+    padding: 0;
+    height: auto;
     width: 90%;
   }
 }
