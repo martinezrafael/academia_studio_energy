@@ -1,10 +1,10 @@
-.whoCreated {
+.s-creator {
   background: #141414;
   margin-bottom: 120px;
-  padding: 80px 0;
 }
 
-.whoCreated__container {
+.s-creator__container {
+  color: #fff;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
@@ -12,13 +12,11 @@
   margin: 0 auto;
 }
 
-.whoCreated__content {
+.s-creator__content {
   align-self: center;
 }
 
-.whoCreated__content p {
-  color: #fff;
-  font-size: 24px;
+.s-creator__content p {
   margin-bottom: 20px;
-  line-height: 1.166;
+  line-height: 1.25;
 }
