@@ -58,3 +58,10 @@
   line-height: 1.11;
   margin-bottom: 20px;
 }
+
+@media (max-width: 800px) {
+  .s-prev__partners,
+  .s-next__partners {
+    display: none;
+  }
+}

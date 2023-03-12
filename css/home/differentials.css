@@ -54,3 +54,18 @@
   line-height: 1.33;
   margin-left: 24px;
 }
+
+@media (max-width: 800px) {
+  .s-differentials {
+    box-shadow: none;
+    width: 100%;
+  }
+
+  .s-differentials__container {
+    grid-template-columns: 1fr;
+  }
+
+  .s-differentials__image___wrapper {
+    display: none;
+  }
+}

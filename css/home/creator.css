@@ -20,3 +20,13 @@
   margin-bottom: 20px;
   line-height: 1.25;
 }
+
+@media (max-width: 800px) {
+  .s-creator__container {
+    grid-template-columns: 1fr;
+  }
+
+  .s-creator__image___wrapper {
+    display: none;
+  }
+}

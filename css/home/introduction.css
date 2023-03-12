@@ -23,3 +23,24 @@
   object-fit: cover;
   margin-top: 32px;
 }
+
+@media (max-width: 800px) {
+  .s-introduction {
+    background: #141414;
+    box-shadow: none;
+    margin-bottom: 80px;
+    padding: 80px 0;
+    text-align: center;
+  }
+
+  .s-introduction__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0px;
+    margin: 0px;
+  }
+
+  .s-introduction__image___wrapper {
+    display: none;
+  }
+}

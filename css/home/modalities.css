@@ -120,3 +120,28 @@
     transform: translate3d(0, 0, 0);
   }
 }
+
+@media (max-width: 800px) {
+  .s-modalities {
+    text-align: center;
+  }
+
+  .s-modalities__container {
+    margin: 0;
+  }
+
+  .s-modalities__details___content ul {
+    text-align: center;
+  }
+
+  .s-prev__modalities,
+  .s-next__modalities {
+    display: none;
+  }
+
+  .s-modalities__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

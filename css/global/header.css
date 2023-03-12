@@ -42,3 +42,40 @@
 .s-main__navigation ul li a:hover {
   color: #ff0000;
 }
+
+@media (max-width: 800px) {
+  .s-header {
+    position: relative;
+  }
+
+  .s-header__container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .s-header__container a {
+    margin-bottom: 40px;
+  }
+
+  .s-header__container a img {
+    width: 400px;
+  }
+
+  .s-navigation__wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .s-main__navigation ul {
+    flex-direction: column;
+  }
+
+  .s-main__navigation ul li {
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+}

@@ -79,3 +79,20 @@
   display: block !important;
   animation: showdetails 0.5s forwards;
 }
+
+@media (max-width: 800px) {
+  .s-schedules__days ul {
+    flex-direction: column;
+  }
+
+  .s-schedules__days ul li {
+    margin-bottom: 20px;
+    padding: 24px 48px;
+    width: 80%;
+  }
+
+  .s-schedules__classes__list li {
+    height: 266px;
+    width: 90%;
+  }
+}

@@ -49,3 +49,9 @@
   margin: 0 auto;
   text-transform: uppercase;
 }
+
+@media (max-width: 800px) {
+  .footer__container {
+    grid-template-columns: 1fr;
+  }
+}

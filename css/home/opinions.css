@@ -37,3 +37,9 @@
   font-size: 18px;
   font-weight: 600;
 }
+
+@media (max-width: 800px) {
+  .s-opinions__list {
+    flex-direction: column;
+  }
+}

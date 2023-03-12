@@ -33,3 +33,14 @@
   margin-bottom: 40px;
   line-height: 1.33;
 }
+
+@media (max-width: 800px) {
+  .s-location__content {
+    grid-template-columns: 1fr;
+  }
+
+  .s-location__map iframe {
+    height: 456px;
+    width: 100%;
+  }
+}
