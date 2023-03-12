@@ -1,46 +1,55 @@
-.differentials {
+.s-differentials {
   background: #141414;
-  box-shadow: inset 0px -120px #fff, inset 0px 120px #fff;
+  box-shadow: inset 0px -120px #fff;
+}
+
+.s-differentials__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
   margin-bottom: 120px;
 }
 
-.differentials__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.s-differentials__image___wrapper {
+  height: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+  margin-top: 32px;
 }
 
-.differentials__content {
+.s-differentials__content {
   align-self: center;
-  max-width: 480px;
+  max-width: 460px;
 }
 
-.differentials__item {
-  margin-bottom: 20px;
-}
-
-.differentials__item h4 {
-  font-family: "Kanit", sans-serif;
+.s-differentials__list {
   color: #fff;
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 12px;
-  text-transform: uppercase;
+}
+
+.s-differentials__list li {
+  margin-bottom: 40px;
+}
+
+.s-differentials__list li h3 {
   display: flex;
   align-items: center;
   gap: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  text-transform: uppercase;
 }
 
-.differentials__item h4::before {
-  border-radius: 1px;
+.s-differentials__list li h3::before {
   content: "";
   display: block;
+  background: linear-gradient(#ff0000, #922f2f);
   height: 6px;
   width: 12px;
-  background: linear-gradient(#ff0000, #922f2f);
 }
 
-.differentials__item p {
-  color: #fff;
-  font-size: 20px;
-  line-height: 1.2;
+.s-differentials__list li p {
+  font-size: 18px;
+  line-height: 1.33;
 }

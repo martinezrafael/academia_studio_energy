@@ -23,3 +23,8 @@ const slidepartners = new SlideNav(
 
 slidepartners.init();
 slidepartners.addArrow(".s-prev__partners", ".s-next__partners");
+
+const btn = document.querySelectorAll(".whatsapp");
+console.log(btn);
+
+btn.forEach((item) => (item.href = "https://wa.me/5511997853236"));
