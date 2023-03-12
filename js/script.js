@@ -61,3 +61,44 @@ if (tabMenuModalities.length && tabContentModalities.length) {
     });
   });
 }
+
+//add tab menu schedules
+const tabMenuSchedules = document.querySelectorAll(".s-tabmenu__schedules li");
+
+const tabContentSchedules = document.querySelectorAll(
+  ".s-tabcontent__schedules section"
+);
+
+if (tabMenuSchedules.length && tabContentSchedules.length) {
+  const dayActive = new Date().getDay();
+  console.log(dayActive);
+
+  if (dayActive === 0 || dayActive === 6) {
+    tabContentSchedules[0].classList.add("ativo");
+    tabMenuSchedules[0].classList.add("ativo");
+  } else {
+    tabContentSchedules[dayActive - 1].classList.add("ativo");
+    tabMenuSchedules[dayActive - 1].classList.add("ativo");
+  }
+
+  function activeMenuSchedule(index) {
+    tabMenuSchedules.forEach((item) => {
+      item.classList.remove("ativo");
+    });
+    tabMenuSchedules[index].classList.add("ativo");
+  }
+
+  function activeTabSchedule(index) {
+    tabContentSchedules.forEach((section) => {
+      section.classList.remove("ativo");
+    });
+    tabContentSchedules[index].classList.add("ativo");
+  }
+
+  tabMenuSchedules.forEach((item, index) => {
+    item.addEventListener("click", () => {
+      activeTabSchedule(index);
+      activeMenuSchedule(index);
+    });
+  });
+}
