@@ -27,8 +27,37 @@ slidepartners.addArrow(".s-prev__partners", ".s-next__partners");
 //add link whataspp for href
 const btn = document.querySelectorAll(".whatsapp");
 btn.forEach((item) => (item.href = "https://wa.me/5511997853236"));
+btn.forEach((item) => {
+  item.setAttribute("target", "_blank");
+});
 
 //update year of copyright
 let yearCopyright = new Date().getFullYear().toString();
 let spanElementDate = document.getElementById("date-copy");
 spanElementDate.textContent = yearCopyright;
+
+//add tab menu modalities
+const tabMenuModalities = document.querySelectorAll(
+  ".s-tabmenu__modalities li"
+);
+
+const tabContentModalities = document.querySelectorAll(
+  ".s-tabcontent__modalities section"
+);
+
+if (tabMenuModalities.length && tabContentModalities.length) {
+  tabContentModalities[1].classList.add("ativo");
+
+  function activeTab(index) {
+    tabContentModalities.forEach((section) => {
+      section.classList.remove("ativo");
+    });
+    tabContentModalities[index].classList.add("ativo");
+  }
+
+  tabMenuModalities.forEach((item, index) => {
+    item.addEventListener("click", () => {
+      activeTab(index);
+    });
+  });
+}
