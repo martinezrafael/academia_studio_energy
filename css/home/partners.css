@@ -60,8 +60,24 @@
 }
 
 @media (max-width: 800px) {
+  .s-partners__container {
+    width: 100%;
+    margin: 0;
+    padding: 20px 12px;
+  }
+
+  .s-paretners__carousel {
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+
   .s-prev__partners,
   .s-next__partners {
     display: none;
+  }
+
+  .s-partner {
+    height: auto;
+    width: 300px;
   }
 }

@@ -131,19 +131,29 @@
 }
 
 @media (max-width: 800px) {
+  .s-prices__container {
+    width: 100%;
+    margin: 0;
+    padding: 20px 12px;
+  }
+
+  .s-prices__carousel {
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+
   .s-prev__prices,
   .s-next__prices {
     display: none;
   }
 
-  .payment {
-    text-align: center;
-    width: 100%;
-  }
-
   .payments__list {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .s-prices__slide li {
+    height: auto;
+    width: 260px;
   }
 }

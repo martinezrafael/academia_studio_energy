@@ -26,19 +26,32 @@
 
 @media (max-width: 800px) {
   .s-introduction {
+    background: none;
     box-shadow: none;
-    margin-bottom: 80px;
-    padding: 0;
+    padding: 40px 12px;
   }
 
   .s-introduction__container {
-    display: grid;
     grid-template-columns: 1fr;
-    gap: 0px;
-    padding: 80px 40px;
+    margin: 0;
+    width: 100%;
   }
 
-  .s-introduction__image___wrapper {
+  .s-introduction__image___wrapper img {
     display: none;
+  }
+
+  .s-introduction__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .s-introduction__content h1,
+  .s-introduction__content span {
+    color: #141414;
   }
 }

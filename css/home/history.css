@@ -21,11 +21,13 @@
 }
 
 @media (max-width: 800px) {
-  .s-history__container {
-    grid-template-columns: 1fr;
-  }
-
   .s-history__image___wrapper {
     display: none;
+  }
+
+  .s-history__container {
+    grid-template-columns: 1fr;
+    padding: 20px 12px;
+    width: 100%;
   }
 }

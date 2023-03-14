@@ -22,6 +22,11 @@
 }
 
 @media (max-width: 800px) {
+  .s-creator {
+    margin-bottom: 20px;
+    padding: 20px 12px;
+  }
+
   .s-creator__container {
     grid-template-columns: 1fr;
   }

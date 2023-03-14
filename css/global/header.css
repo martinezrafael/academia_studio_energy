@@ -46,38 +46,32 @@
 @media (max-width: 800px) {
   .s-header {
     position: static;
+    z-index: 0;
   }
 
   .s-header__container {
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    padding: 80px;
-    width: 100%;
+    padding: 20px 12;
   }
 
-  .s-header__container a {
-    margin-bottom: 40px;
-  }
-
-  .s-header__container a img {
-    width: 400px;
+  .s-header__logo {
+    margin-bottom: 20px;
   }
 
   .s-navigation__wrapper {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 
   .s-main__navigation ul {
     flex-direction: column;
   }
 
-  .s-main__navigation ul li {
-    font-size: 28px;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-bottom: 40px;
+  .s-main__navigation ul li a {
+    padding: 24px 48px;
+  }
+
+  .s-navigation__wrapper .s-btn {
+    display: none;
   }
 }
