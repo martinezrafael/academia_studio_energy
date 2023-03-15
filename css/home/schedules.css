@@ -39,9 +39,10 @@
   text-decoration: none;
 }
 
-.s-schedules__days ul li a:hover,
 .s-schedules__days ul li.ativo {
   background: #fff;
+}
+.s-schedules__days ul li.ativo a {
   color: #ff0000;
 }
 
@@ -96,8 +97,19 @@
 }
 
 @media (max-width: 800px) {
-  .s-schedules__container {
+  .s-schedules {
+    margin-bottom: 40px;
+    padding: 40px 0;
     text-align: center;
+  }
+
+  .s-schedules__container {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .s-schedules__days {
+    margin-bottom: 20px;
   }
 
   .s-schedules__days ul {
@@ -105,11 +117,16 @@
   }
 
   .s-schedules__days ul li {
-    height: 48px;
+    padding: 20px 0;
     width: 80%;
   }
 
   .s-schedules__classes__list {
     justify-content: center;
+    gap: 20px;
+  }
+
+  .s-schedules__classes__list li:hover {
+    scale: none;
   }
 }

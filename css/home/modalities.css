@@ -121,19 +121,14 @@
 }
 
 @media (max-width: 800px) {
-  .s-modalities__slide {
-    flex-direction: column;
+  .s-modalities {
+    margin-bottom: 80px;
+    text-align: center;
   }
 
   .s-modalities__container {
-    width: 100%;
-    margin: 0;
-    padding: 20px 12px;
-  }
-
-  .s-modalities__carousel {
-    gap: 12px;
-    margin-bottom: 40px;
+    max-width: 100%;
+    margin: 24px 12px;
   }
 
   .s-prev__modalities,
@@ -143,18 +138,10 @@
 
   .s-modalities__grid {
     grid-template-columns: 1fr;
+    gap: 40px;
   }
 
   .s-modalities__details___image___wrapper {
     display: none;
-  }
-
-  .s-modalities__details {
-    width: 100%;
-  }
-
-  .s-modalities__slide li img {
-    height: auto;
-    width: 260px;
   }
 }

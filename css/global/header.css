@@ -46,32 +46,36 @@
 @media (max-width: 800px) {
   .s-header {
     position: static;
+    top: 80px;
     z-index: 0;
   }
 
   .s-header__container {
+    max-width: none;
+    margin: 0;
     flex-direction: column;
     justify-content: center;
-    padding: 20px 12;
-  }
-
-  .s-header__logo {
-    margin-bottom: 20px;
+    padding: 32px 0;
   }
 
   .s-navigation__wrapper {
     flex-direction: column;
+    justify-content: center;
+    gap: 20px;
   }
 
   .s-main__navigation ul {
     flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .s-main__navigation ul li {
+    font-size: 18px;
+    margin-bottom: 20px;
   }
 
   .s-main__navigation ul li a {
-    padding: 24px 48px;
-  }
-
-  .s-navigation__wrapper .s-btn {
-    display: none;
+    text-align: center;
   }
 }
