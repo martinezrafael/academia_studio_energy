@@ -15,31 +15,36 @@
   padding: 16px 0;
 }
 
+.s-header__logo {
+  text-decoration: none;
+  padding: 12px;
+}
+
 .s-navigation__wrapper {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-.s-main__navigation ul {
+.s-navigation ul {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-.s-main__navigation ul li {
+.s-navigation ul li {
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
 }
 
-.s-main__navigation ul li a {
+.s-navigation ul li a {
   color: #fff;
   text-decoration: none;
   transition: 0.3s;
 }
 
-.s-main__navigation ul li a:hover {
+.s-navigation ul li a:hover {
   color: #ff0000;
 }
 

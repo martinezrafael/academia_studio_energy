@@ -5,36 +5,21 @@
 
 .s-prices__container {
   max-width: 1160px;
-  margin: 0 auto;
+  margin: auto;
 }
 
-.s-prices__carousel {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  margin-bottom: 40px;
-}
-
-.s-prices__slide___wrapper {
-  display: flex;
-  overflow: hidden;
-}
-
-.s-prices__slide {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.s-prices__slide li {
+.s-prices__carousel___item {
   background: #141414;
   border-radius: 4px;
-  flex-shrink: 0;
-  padding: 40px;
-  text-align: center;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 0;
+  align-items: center;
 }
 
-.s-prices__slide li h3 {
+.s-prices__carousel___item h3 {
   color: #fff;
   font-family: "Kanit", sans-serif;
   font-size: 32px;
@@ -44,122 +29,81 @@
   text-transform: uppercase;
 }
 
-.s-prices__plan {
-  color: #ccc;
-  font-size: 18px;
-  line-height: 1.33;
-  letter-spacing: 0.015em;
-  margin-bottom: 4px;
-  text-transform: uppercase;
-}
-
-.s-prices__value {
-  color: #ff7575;
-  font-family: "Kanit", sans-serif;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-.s-prices__plan--highlight {
-  color: #fff;
-  font-size: 24px;
-  line-height: 1.33;
-  letter-spacing: 0.015em;
-  margin-bottom: 4px;
-  text-transform: uppercase;
-}
-
-.s-prices__value--highlight {
-  color: #ff0000;
-  font-family: "Kanit", sans-serif;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-.month {
+.s-prices__carousel__monthly {
   margin-bottom: 20px;
+  text-align: center;
 }
 
-.month::after {
+.s-prices__carousel__monthly::after {
   content: "";
   display: block;
   background: #292929;
-  margin-top: 20px;
   height: 2px;
-  width: 100%;
+  margin-top: 20px;
+  width: 220px;
 }
 
-.year {
-  margin-bottom: 8px;
+.s-prices__carousel__monthly p,
+.s-prices__carousel__annual p {
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 1.33;
+  margin-bottom: 4px;
+}
+
+.s-prices__carousel__monthly span {
+  color: #ff9f9f;
+  font-size: 40px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-weight: 700;
+}
+
+.s-prices__carousel__annual span {
+  color: #ff0000;
+  font-size: 40px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-weight: 700;
 }
 
 .s-prices__observation {
   color: #fff;
-  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 8px 0px 20px 0px;
 }
 
-.payment {
+.s-payment {
   background: #141414;
+  box-sizing: border-box;
   border-radius: 4px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
   padding: 40px;
+  width: 100%;
 }
 
-.payments__list {
-  display: flex;
+.s-payments__list {
   align-items: center;
+  color: #fff;
+  display: flex;
   gap: 20px;
 }
 
-.payments__list li {
-  color: #fff;
-  font-size: 18px;
+.s-payments__item {
+  text-transform: uppercase;
+  line-height: 1.33;
   display: flex;
   align-items: center;
   gap: 8px;
-  text-transform: uppercase;
 }
 
-.payments__list li::before {
+.s-payments__item::before {
   content: "";
   display: block;
   background: linear-gradient(#ff0000, #922f2f);
   border-radius: 1px;
   height: 6px;
   width: 12px;
-}
-
-@media (max-width: 800px) {
-  .s-prices {
-    margin-bottom: 60px;
-    text-align: center;
-  }
-
-  .s-prices__container {
-    max-width: 100%;
-    margin: 0;
-  }
-
-  .s-prices__carousel {
-    gap: 0px;
-    margin-bottom: 20px;
-  }
-
-  .s-prev__prices,
-  .s-next__prices {
-    display: none;
-  }
-
-  .payment {
-    margin: 0px 12px;
-    padding: 20px 12px;
-    text-align: left;
-  }
-
-  .payments__list {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-  }
 }

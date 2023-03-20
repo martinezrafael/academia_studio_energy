@@ -21,24 +21,6 @@
   gap: 20px;
 }
 
-.s-schedules__days ul li {
-  background: linear-gradient(#ff0000, #922f2f);
-  border-radius: 4px;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  cursor: pointer;
-  padding: 12px 24px;
-  text-transform: uppercase;
-}
-
-.s-schedules__days ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
 .s-schedules__days ul li.ativo {
   background: #fff;
 }

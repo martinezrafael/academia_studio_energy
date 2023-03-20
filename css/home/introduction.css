@@ -17,13 +17,6 @@
   max-width: 460px;
 }
 
-.introduction__image___wrapper img {
-  height: 100%;
-  border-radius: 4px;
-  object-fit: cover;
-  margin-top: 32px;
-}
-
 @media (max-width: 800px) {
   .s-introduction {
     box-shadow: none;

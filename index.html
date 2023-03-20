@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Academia de Musculação em Peruíbe">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="/css/style.css">
   <title>Studio Energy - Academia de Musculação em Peruíbe</title>
 </head>
@@ -19,7 +20,7 @@
         <img src="./img/studio-energy.svg" alt="Academia Studio Energy">
       </a>
       <div class="s-navigation__wrapper">
-        <nav class="s-main__navigation">
+        <nav class="s-navigation">
           <ul>
             <li><a href="#modalidades">modalidades</a></li>
             <li><a href="#horarios">horários</a></li>
@@ -39,137 +40,61 @@
           comece a treinar pagando a partir de
           <span class="s-title--red">90 reais por mês.</span>
         </h1>
-        <a class="s-btn s-btn--inlineBlock" href="">matricule-se já</a>
+        <a class="s-btn" href="">matricule-se já</a>
       </div>
-      <div class="s-introduction__image___wrapper">
-        <img src="./img/banner-introducao.jpg" alt="Academia Studio Energy">
+      <div>
+        <img class="s-introduction__image" src="./img/banner-introducao.jpg" alt="Academia Studio Energy">
       </div>
     </div>
   </main>
 
-  <section class="s-modalities" id="modalidades">
+  <section class="s-modalities">
     <div class="s-modalities__container">
       <h2 class="s-title s-title--black">
         modalidades<span class="s-title--red">.</span>
       </h2>
-      <div class="s-modalities__carousel">
-        <button class="s-arrow__btn s-prev__modalities">
-          <img src="./img/arrow-left.svg" alt="arrow left">
-        </button>
-        <div class="s-modalities__slide___wrapper">
-          <ul class="s-modalities__slide s-tabmenu__modalities">
-            <li>
-              <img src="./img/slide-modalidades/musculacao.png" alt="musculação">
-              <span class="s-modalities__tag">
-                <p>musculação</p>
-              </span>
-            </li>
-            <li>
-              <img src="./img/slide-modalidades/boxe.png" alt="boxe">
-              <span class="s-modalities__tag">
-                <p>boxe</p>
-              </span>
-            </li>
-            <li>
-              <img src="./img/slide-modalidades/yoga.png" alt="yoga">
-              <span class="s-modalities__tag">
-                <p>yoga</p>
-              </span>
-            </li>
-            <li>
-              <img src="./img/slide-modalidades/fitdance.png" alt="fit dance">
-              <span class="s-modalities__tag">
-                <p>fit dance</p>
-              </span>
-            </li>
-          </ul>
-        </div>
-        <button class="s-arrow__btn s-next__modalities">
-          <img src="./img/arrow-right.svg" alt="arrow right">
-        </button>
-      </div>
-
-      <div class="s-modalities__details s-tabcontent__modalities">
-        <section>
-          <div class="s-modalities__grid">
-            <div class="s-modalities__details___image___wrapper">
-              <img src="./img/musculacao-detalhes.png" alt="Musculação Detalhes">
-            </div>
-            <div class="s-modalities__details___content">
-              <h2 class="s-subtitle s-subtitle--black">musculação</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In culpa alias corrupti, sunt ratione rerum quam debitis.
-              </p>
-              <h3>benefícios</h3>
-              <ul>
-                <li>fortalecimento muscular</li>
-                <li>emagrecimento</li>
-                <li>reduz ansiedade</li>
-              </ul>
-              <a href="" class="s-btn s-btn--inlineBlock whatsapp">matricule-se já</a>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div class="s-modalities__grid">
-            <div class="s-modalities__details___image___wrapper">
-              <img src="./img/musculacao-detalhes.png" alt="Musculação Detalhes">
-            </div>
-            <div class="s-modalities__details___content">
-              <h2 class="s-subtitle s-subtitle--black">boxe</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In culpa alias corrupti, sunt ratione rerum quam debitis.
-              </p>
-              <h3>benefícios</h3>
-              <ul>
-                <li>fortalecimento muscular</li>
-                <li>emagrecimento</li>
-                <li>reduz ansiedade</li>
-              </ul>
-              <a href="" class="s-btn s-btn--inlineBlock whatsapp">matricule-se já</a>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div class="s-modalities__grid">
-            <div class="s-modalities__details___image___wrapper">
-              <img src="./img/musculacao-detalhes.png" alt="Musculação Detalhes">
-            </div>
-            <div class="s-modalities__details___content">
-              <h2 class="s-subtitle s-subtitle--black">yoga</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In culpa alias corrupti, sunt ratione rerum quam debitis.
-              </p>
-              <h3>benefícios</h3>
-              <ul>
-                <li>fortalecimento muscular</li>
-                <li>emagrecimento</li>
-                <li>reduz ansiedade</li>
-              </ul>
-              <a href="" class="s-btn s-btn--inlineBlock whatsapp">matricule-se já</a>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div class="s-modalities__grid">
-            <div class="s-modalities__details___image___wrapper">
-              <img src="./img/musculacao-detalhes.png" alt="Musculação Detalhes">
-            </div>
-            <div class="s-modalities__details___content">
-              <h2 class="s-subtitle s-subtitle--black">fit dance</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In culpa alias corrupti, sunt ratione rerum quam debitis.
-              </p>
-              <h3>benefícios</h3>
-              <ul>
-                <li>fortalecimento muscular</li>
-                <li>emagrecimento</li>
-                <li>reduz ansiedade</li>
-              </ul>
-              <a href="" class="s-btn s-btn--inlineBlock whatsapp">matricule-se já</a>
-            </div>
-          </div>
-        </section>
+      <div class="swiper s-modalities__carousel">
+        <ul class="swiper-wrapper s-modalities__carousel___list">
+          <li class="swiper-slide s-modalities__carousel___item">
+            <img class="s-modalities__carousel___image" src="./img/slide-modalidades/musculacao.png" alt="Academia Studio Energy - Musculação">
+            <span class="s-modalities__carousel___tag">
+              <p>musculação</p>
+            </span>
+          </li>
+          <li class="swiper-slide s-modalities__carousel___item">
+            <img class="s-modalities__carousel___image" src="./img/slide-modalidades/boxe.png" alt="Academia Studio Energy - Boxe">
+            <span class="s-modalities__carousel___tag">
+              <p>boxe</p>
+            </span>
+          </li>
+          <li class="swiper-slide s-modalities__carousel___item">
+            <img class="s-modalities__carousel___image" src="./img/slide-modalidades/yoga.png" alt="Academia Studio Energy - Yoga">
+            <span class="s-modalities__carousel___tag">
+              <p>yoga</p>
+            </span>
+          </li>
+          <li class="swiper-slide s-modalities__carousel___item">
+            <img class="s-modalities__carousel___image" src="./img/slide-modalidades/fitdance.png" alt="Academia Studio Energy - Fit Dance">
+            <span class="s-modalities__carousel___tag">
+              <p>fit dance</p>
+            </span>
+          </li>
+          <li class="swiper-slide s-modalities__carousel___item">
+            <img class="s-modalities__carousel___image" src="./img/slide-modalidades/musculacao.png" alt="Academia Studio Energy - Musculação">
+            <span class="s-modalities__carousel___tag">
+              <p>musculação</p>
+            </span>
+          </li>
+          <li class="swiper-slide s-modalities__carousel___item">
+            <img class="s-modalities__carousel___image" src="./img/slide-modalidades/boxe.png" alt="Academia Studio Energy - Boxe">
+            <span class="s-modalities__carousel___tag">
+              <p>boxe</p>
+            </span>
+          </li>
+        </ul>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
   </section>
@@ -182,11 +107,11 @@
       </h2>
       <div class="s-schedules__days">
         <ul class="s-tabmenu__schedules">
-          <li><a href="#horarios">segunda feira</a></li>
-          <li><a href="#horarios">terça feira</a></li>
-          <li><a href="#horarios">quarta feira</a></li>
-          <li><a href="#horarios">quinta feira</a></li>
-          <li><a href="#horarios">sexta feira</a></li>
+          <li><a class="s-btn" href="#horarios">segunda feira</a></li>
+          <li><a class="s-btn" href="#horarios">terça feira</a></li>
+          <li><a class="s-btn" href="#horarios">quarta feira</a></li>
+          <li><a class="s-btn" href="#horarios">quinta feira</a></li>
+          <li><a class="s-btn" href="#horarios">sexta feira</a></li>
         </ul>
       </div>
       <div class="s-schedules__classes s-tabcontent__schedules" id="horarios">
@@ -346,79 +271,103 @@
       <h2 class="s-title s-title--black">
         preços<span class="s-title--red">.</span>
       </h2>
-      <div class="s-prices__carousel">
-        <button class="s-arrow__btn s-prev__prices">
-          <img src="./img/arrow-left.svg" alt="arrow left">
-        </button>
-        <div class="s-prices__slide___wrapper">
-          <ul class="s-prices__slide">
-            <li>
-              <h3>musculação</h3>
-              <div class="month">
-                <p class="s-prices__plan">plano mensal</p>
-                <p class="s-prices__value">R$90,00</p>
-              </div>
-              <div class="year">
-                <p class="s-prices__plan s-prices__plan--highlight">plano anual</p>
-                <p class="s-prices__value s-prices__value--highlight">R$75,00*</p>
-              </div>
-              <p class="s-prices__observation">*válido para o pagamento a vista.</p>
-              <a class="s-btn s-btn--inlineBlock" href="">matricule-se já</a>
-            </li>
-            <li>
-              <h3>musculação</h3>
-              <div class="month">
-                <p class="s-prices__plan">plano mensal</p>
-                <p class="s-prices__value">R$90,00</p>
-              </div>
-              <div class="year">
-                <p class="s-prices__plan s-prices__plan--highlight">plano anual</p>
-                <p class="s-prices__value s-prices__value--highlight">R$75,00*</p>
-              </div>
-              <p class="s-prices__observation">*válido para o pagamento a vista.</p>
-              <a class="s-btn s-btn--inlineBlock" href="">matricule-se já</a>
-            </li>
-            <li>
-              <h3>musculação</h3>
-              <div class="month">
-                <p class="s-prices__plan">plano mensal</p>
-                <p class="s-prices__value">R$90,00</p>
-              </div>
-              <div class="year">
-                <p class="s-prices__plan s-prices__plan--highlight">plano anual</p>
-                <p class="s-prices__value s-prices__value--highlight">R$75,00*</p>
-              </div>
-              <p class="s-prices__observation">*válido para o pagamento a vista.</p>
-              <a class="s-btn s-btn--inlineBlock" href="">matricule-se já</a>
-            </li>
-            <li>
-              <h3>musculação</h3>
-              <div class="month">
-                <p class="s-prices__plan">plano mensal</p>
-                <p class="s-prices__value">R$90,00</p>
-              </div>
-              <div class="year">
-                <p class="s-prices__plan s-prices__plan--highlight">plano anual</p>
-                <p class="s-prices__value s-prices__value--highlight">R$75,00*</p>
-              </div>
-              <p class="s-prices__observation">*válido para o pagamento a vista.</p>
-              <a class="s-btn s-btn--inlineBlock" href="">matricule-se já</a>
-            </li>
-          </ul>
-        </div>
-        <button class="s-arrow__btn s-next__prices">
-          <img src="./img/arrow-right.svg" alt="arrow right">
-        </button>
+
+      <div class="swiper s-prices__carousel">
+        <ul class="swiper-wrapper s-prices__carousel___list">
+          <li class="swiper-slide s-prices__carousel___item">
+            <h3>musculação</h3>
+            <div class="s-prices__carousel__monthly">
+              <p>plano mensal</p>
+              <span>R$90,00</span>
+            </div>
+            <div class="s-prices__carousel__annual">
+              <p>plano anual</p>
+              <span>R$75,00*</span>
+            </div>
+            <span class="s-prices__observation">Válido para pagamento à vista*</span>
+            <a class="s-btn whatsapp" href="">matricule-se já</a>
+          </li>
+          <li class="swiper-slide s-prices__carousel___item">
+            <h3>musculação</h3>
+            <div class="s-prices__carousel__monthly">
+              <p>plano mensal</p>
+              <span>R$90,00</span>
+            </div>
+            <div class="s-prices__carousel__annual">
+              <p>plano anual</p>
+              <span>R$75,00*</span>
+            </div>
+            <span class="s-prices__observation">Válido para pagamento à vista*</span>
+            <a class="s-btn whatsapp" href="">matricule-se já</a>
+          </li>
+          <li class="swiper-slide s-prices__carousel___item">
+            <h3>musculação</h3>
+            <div class="s-prices__carousel__monthly">
+              <p>plano mensal</p>
+              <span>R$90,00</span>
+            </div>
+            <div class="s-prices__carousel__annual">
+              <p>plano anual</p>
+              <span>R$75,00*</span>
+            </div>
+            <span class="s-prices__observation">Válido para pagamento à vista*</span>
+            <a class="s-btn whatsapp" href="">matricule-se já</a>
+          </li>
+          <li class="swiper-slide s-prices__carousel___item">
+            <h3>musculação</h3>
+            <div class="s-prices__carousel__monthly">
+              <p>plano mensal</p>
+              <span>R$90,00</span>
+            </div>
+            <div class="s-prices__carousel__annual">
+              <p>plano anual</p>
+              <span>R$75,00*</span>
+            </div>
+            <span class="s-prices__observation">Válido para pagamento à vista*</span>
+            <a class="s-btn whatsapp" href="">matricule-se já</a>
+          </li>
+          <li class="swiper-slide s-prices__carousel___item">
+            <h3>musculação</h3>
+            <div class="s-prices__carousel__monthly">
+              <p>plano mensal</p>
+              <span>R$90,00</span>
+            </div>
+            <div class="s-prices__carousel__annual">
+              <p>plano anual</p>
+              <span>R$75,00*</span>
+            </div>
+            <span class="s-prices__observation">Válido para pagamento à vista*</span>
+            <a class="s-btn whatsapp" href="">matricule-se já</a>
+          </li>
+          <li class="swiper-slide s-prices__carousel___item">
+            <h3>musculação</h3>
+            <div class="s-prices__carousel__monthly">
+              <p>plano mensal</p>
+              <span>R$90,00</span>
+            </div>
+            <div class="s-prices__carousel__annual">
+              <p>plano anual</p>
+              <span>R$75,00*</span>
+            </div>
+            <span class="s-prices__observation">Válido para pagamento à vista*</span>
+            <a class="s-btn whatsapp" href="">matricule-se já</a>
+          </li>
+        </ul>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
-      <div class="payment">
+
+
+      <div class="s-payment">
         <h3 class="s-subtitle s-subtitle--white">formas de pagamento</h3>
-        <div class="payments">
-          <ul class="payments__list">
-            <li>dinheiro</li>
-            <li>cartão de crédito</li>
-            <li>cartão de débito</li>
-            <li>pix</li>
-            <li>transferência bancária</li>
+        <div class="s-payments">
+          <ul class="s-payments__list">
+            <li class="s-payments__item">dinheiro</li>
+            <li class="s-payments__item">cartão de crédito</li>
+            <li class="s-payments__item">cartão de débito</li>
+            <li class="s-payments__item">pix</li>
+            <li class="s-payments__item">transferência bancária</li>
           </ul>
         </div>
       </div>
@@ -689,6 +638,7 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script type="module" src="./js/script.js"></script>
 </body>
 
