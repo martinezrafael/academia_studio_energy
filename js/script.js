@@ -1,5 +1,9 @@
-import slideModalities from "./modules/modalities.js";
+import { slideModalities, tabModalities } from "./modules/modalities.js";
 slideModalities();
+tabModalities();
+
+import tabSchedules from "./modules/schedules.js";
+tabSchedules();
 
 import slidePrices from "./modules/prices.js";
 slidePrices();

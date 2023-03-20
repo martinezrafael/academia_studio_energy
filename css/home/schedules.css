@@ -2,113 +2,42 @@
   background: #141414;
   color: #fff;
   margin-bottom: 120px;
-  padding: 80px 0;
-  width: 100%;
 }
 
 .s-schedules__container {
   max-width: 1160px;
   margin: 0 auto;
+  padding: 80px 0;
 }
 
-.s-schedules__days {
-  margin-bottom: 40px;
-}
-
-.s-schedules__days ul {
+.s-schedules__days___list {
   display: flex;
   align-items: center;
   gap: 20px;
+  padding-bottom: 20px;
 }
 
-.s-schedules__days ul li.ativo {
-  background: #fff;
-}
-.s-schedules__days ul li.ativo a {
+.s-schedules__days___list li a:hover {
+  background: #ff9f9f;
   color: #ff0000;
 }
 
-.s-schedules__classes__list {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
+.s-schedules__days___list li a.ativo {
+  background: #ff9f9f;
+  color: #ff0000;
 }
 
-.s-schedules__classes__list li {
-  background-color: #000;
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 40px;
-  text-align: center;
-  height: 266px;
-  width: 320px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: 0.5s;
-}
-
-.s-schedules__classes__list li:hover {
-  scale: 1.1;
-}
-
-.s-schedules__classes__list li h3 {
-  font-size: 24px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.s-schedules__classes__times p:first-child {
-  color: #b8b8b8;
-  text-transform: uppercase;
-  margin-bottom: 20;
-}
-
-.s-schedules__classes__times p {
-  margin-bottom: 12px;
-}
-
-.s-tabcontent__schedules section {
+.s-schedules__tabcontent section {
   display: none;
 }
 
-.s-tabcontent__schedules section.ativo {
+.s-schedules__tabcontent section.ativo {
   display: block !important;
-  animation: showdetails 0.5s forwards;
+  animation: show 0.5s forwards;
 }
 
-@media (max-width: 800px) {
-  .s-schedules {
-    margin-bottom: 40px;
-    padding: 40px 0;
-    text-align: center;
-  }
-
-  .s-schedules__container {
-    max-width: 100%;
-    margin: 0;
-  }
-
-  .s-schedules__days {
-    margin-bottom: 20px;
-  }
-
-  .s-schedules__days ul {
-    flex-direction: column;
-  }
-
-  .s-schedules__days ul li {
-    padding: 20px 0;
-    width: 80%;
-  }
-
-  .s-schedules__classes__list {
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .s-schedules__classes__list li:hover {
-    scale: none;
-  }
+.s-schedules__content section ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
 }
