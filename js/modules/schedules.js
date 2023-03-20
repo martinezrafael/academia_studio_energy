@@ -11,20 +11,17 @@ export default function tabSchedules() {
     ".s-schedules__tabcontent section"
   );
 
-  function showDayActive() {
+  if (tabMenuSchedules.length && tabContentSchedules.length) {
     const day = new Date().getDay();
+    console.log(day);
 
     if (day === 0 || day === 6) {
+      tabContentSchedules[0].classList.add("ativo");
       tabMenuSchedulesLink[0].classList.add("ativo");
     } else {
+      tabContentSchedules[day - 1].classList.add("ativo");
       tabMenuSchedulesLink[day - 1].classList.add("ativo");
     }
-  }
-
-  showDayActive();
-
-  if (tabMenuSchedules.length && tabContentSchedules) {
-    tabContentSchedules[0].classList.add("ativo");
 
     function activeTab(index) {
       tabContentSchedules.forEach((item) => {
