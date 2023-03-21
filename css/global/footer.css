@@ -50,6 +50,10 @@
   text-transform: uppercase;
 }
 
+.s-location__info___tel a {
+  color: #ff0000;
+}
+
 @media (max-width: 800px) {
   .footer__container {
     grid-template-columns: 1fr;
