@@ -1,7 +1,8 @@
 @import "./global/reset.css";
 @import "./global/global.css";
-@import "./utilies/components.css";
+@import "./utils/components.css";
 @import "./global/header.css";
+@import "./global/origamid-menu.css";
 @import "./home/introduction.css";
 @import "./slide.css";
 @import "./home/modalities.css";

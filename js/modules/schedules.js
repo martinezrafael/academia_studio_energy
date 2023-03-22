@@ -13,7 +13,6 @@ export default function tabSchedules() {
 
   if (tabMenuSchedules.length && tabContentSchedules.length) {
     const day = new Date().getDay();
-    console.log(day);
 
     if (day === 0 || day === 6) {
       tabContentSchedules[0].classList.add("ativo");
