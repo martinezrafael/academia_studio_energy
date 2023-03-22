@@ -17,7 +17,6 @@
 
 .s-header__logo {
   text-decoration: none;
-  padding: 12px;
 }
 
 .s-navigation__wrapper {
@@ -26,61 +25,20 @@
   gap: 16px;
 }
 
-.s-navigation ul {
+.s-navigation__menu {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-.s-navigation ul li {
+.s-navigation__menu___item {
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
 }
 
-.s-navigation ul li a {
+.s-navigation__menu___link {
   color: #fff;
   text-decoration: none;
   transition: 0.3s;
-}
-
-.s-navigation ul li a:hover {
-  color: #ff0000;
-}
-
-@media (max-width: 800px) {
-  .s-header {
-    position: static;
-    top: 80px;
-    z-index: 0;
-  }
-
-  .s-header__container {
-    max-width: none;
-    margin: 0;
-    flex-direction: column;
-    justify-content: center;
-    padding: 32px 0;
-  }
-
-  .s-navigation__wrapper {
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .s-main__navigation ul {
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 20px;
-  }
-
-  .s-main__navigation ul li {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-
-  .s-main__navigation ul li a {
-    text-align: center;
-  }
 }

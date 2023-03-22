@@ -1,7 +1,7 @@
 .s-introduction {
   background: #141414;
   box-shadow: inset 0px -120px #fff;
-  padding: 80px 0;
+  padding: 40px 0;
 }
 
 .s-introduction__container {
@@ -14,21 +14,5 @@
 
 .s-introduction__content {
   align-self: center;
-  max-width: 460px;
-}
-
-@media (max-width: 800px) {
-  .s-introduction {
-    box-shadow: none;
-    margin-bottom: 40px;
-    padding: 40px 12px;
-    text-align: center;
-  }
-
-  .s-introduction__container {
-    grid-template-columns: 1fr;
-    gap: 40px;
-    max-width: 100%;
-    margin: 0;
-  }
+  /* max-width: 460px; */
 }

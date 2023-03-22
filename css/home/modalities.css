@@ -1,3 +1,8 @@
+.s-modalities {
+  width: 100%;
+  padding: 40px 0;
+}
+
 .s-modalities__container {
   max-width: 1160px;
   margin: auto;
@@ -5,18 +10,12 @@
 
 .s-modalities__carousel___item {
   border-radius: 4px;
-  text-align: center;
   position: relative;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
 }
 
 .s-modalities__carousel___image {
   border-radius: 4px;
-  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -27,11 +26,13 @@
   bottom: 20px;
   background: linear-gradient(#ff0000, #922f2f);
   width: 100%;
-  padding: 26px 0;
+  padding: 24px 0;
+  text-align: center;
 }
 
-.s-modalities__carousel___tag p {
+.s-modalities__carousel___tagName {
   color: #fff;
+  font-size: 24px;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -42,10 +43,10 @@
 
 .s-modalities__tabcontent section.ativo {
   display: block !important;
-  animation: show 0.5s forwards;
+  animation: showDetails 0.5s forwards;
 }
 
-@keyframes show {
+@keyframes showDetails {
   from {
     opacity: 0;
     transform: translate3d(-30px, 0, 0);
@@ -72,7 +73,7 @@
   box-sizing: border-box;
 }
 
-.s-modalities__details___content h3 {
+.s-modalities__details___title {
   color: #141414;
   font-family: "Kanit", sans-serif;
   font-size: 40px;
