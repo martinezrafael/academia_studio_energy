@@ -14,6 +14,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
   padding-bottom: 20px;
 }
 
@@ -73,4 +74,40 @@
   font-size: 18px;
   text-transform: uppercase;
   margin-bottom: 8px;
+}
+
+@media (max-width: 800px) {
+  .s-schedules {
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .s-schedules__container {
+    width: 90%;
+    margin: 0;
+  }
+
+  .s-schedules__days___list {
+    justify-content: center;
+  }
+
+  .s-schedules__days___item {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .s-schedules__days___link {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .s-schedules__content___day ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }

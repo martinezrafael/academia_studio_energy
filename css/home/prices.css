@@ -5,7 +5,7 @@
 
 .s-prices__container {
   max-width: 1160px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .s-prices__carousel___item {
@@ -107,4 +107,24 @@
   border-radius: 1px;
   height: 6px;
   width: 12px;
+}
+
+@media (max-width: 800px) {
+  .s-prices {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .s-prices__container {
+    width: 90%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .s-payments__list {
+    flex-direction: column;
+  }
 }

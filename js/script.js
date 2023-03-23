@@ -1,15 +1,15 @@
-import { slideModalities, tabModalities } from "./modules/modalities.js";
-slideModalities();
+import { resizeCarousel, tabModalities } from "./modules/modalities.js";
+resizeCarousel();
 tabModalities();
 
 import tabSchedules from "./modules/schedules.js";
 tabSchedules();
 
-import slidePrices from "./modules/prices.js";
-slidePrices();
+import resizeCarouselPrices from "./modules/prices.js";
+resizeCarouselPrices();
 
-import slidePartners from "./modules/partners.js";
-slidePartners();
+import resizeCarouselPartners from "./modules/partners.js";
+resizeCarouselPartners();
 
 import updateYearInCopyright from "./modules/footer.js";
 updateYearInCopyright();

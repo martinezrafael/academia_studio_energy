@@ -1,6 +1,6 @@
-export function slideModalities() {
+function slideModalities(numberslides) {
   new Swiper(".s-modalities__carousel", {
-    slidesPerView: 3,
+    slidesPerView: numberslides,
     spaceBetween: 20,
     pagination: {
       el: ".swiper-pagination",
@@ -12,6 +12,14 @@ export function slideModalities() {
       prevEl: ".swiper-button-prev",
     },
   });
+}
+
+export function resizeCarousel() {
+  if (document.body.clientWidth <= 800) {
+    slideModalities(1);
+  } else {
+    slideModalities(4);
+  }
 }
 
 export function tabModalities() {
@@ -38,4 +46,6 @@ export function tabModalities() {
       });
     });
   }
+
+  resizeCarousel();
 }

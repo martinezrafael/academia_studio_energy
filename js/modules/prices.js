@@ -1,6 +1,6 @@
-export default function slidePrices() {
+function slidePrices(size) {
   new Swiper(".s-prices__carousel", {
-    slidesPerView: 3,
+    slidesPerView: size,
     spaceBetween: 20,
     pagination: {
       el: ".swiper-pagination",
@@ -12,4 +12,12 @@ export default function slidePrices() {
       prevEl: ".swiper-button-prev",
     },
   });
+}
+
+export default function resizeCarouselPrices() {
+  if (document.body.clientWidth <= 800) {
+    slidePrices(1);
+  } else {
+    slidePrices(4);
+  }
 }

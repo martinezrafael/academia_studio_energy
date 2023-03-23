@@ -13,6 +13,7 @@
 .s-opinions__list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 40px;
 }
 
@@ -38,32 +39,35 @@
   font-weight: 600;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 480px) {
   .s-opinions {
-    padding: 20px 12px;
-    margin-bottom: 60px;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .s-opinions__container {
-    max-width: 100%;
+    width: 90%;
     margin: 0;
+
+    text-align: center;
   }
 
   .s-opinions__list {
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
   }
 
   .s-opinions__list li {
-    max-width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .s-opinions__list li img {
-    margin-bottom: 8px;
-    width: 258px;
+    width: 70%;
   }
 }

@@ -1,6 +1,6 @@
-export default function slidePartners() {
+function slidePartners(size) {
   new Swiper(".s-partners__carousel", {
-    slidesPerView: 3,
+    slidesPerView: size,
     spaceBetween: 20,
     pagination: {
       el: ".swiper-pagination",
@@ -12,4 +12,12 @@ export default function slidePartners() {
       prevEl: ".swiper-button-prev",
     },
   });
+}
+
+export default function resizeCarouselPartners() {
+  if (document.body.clientWidth <= 800) {
+    slidePartners(1);
+  } else {
+    slidePartners(4);
+  }
 }

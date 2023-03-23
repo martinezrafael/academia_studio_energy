@@ -5,7 +5,7 @@
 
 .s-modalities__container {
   max-width: 1160px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .s-modalities__carousel___item {
@@ -134,4 +134,39 @@
 
 .swiper-pagination-bullet {
   background: #ff0000;
+}
+
+@media (max-width: 800px) {
+  .s-modalities__details {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .s-modalities__details___container {
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .s-modalities__details___container div img {
+    display: none;
+  }
+
+  .s-modalities__details___content {
+    text-align: center;
+  }
+
+  .s-modalities__details___benefits {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .s-modalities__details___benefits___item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
