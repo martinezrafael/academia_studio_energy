@@ -22,9 +22,35 @@
   <link rel="icon" type="image/x-icon" href="./img/favicon.svg">
   <meta name="google-site-verification" content="GyNis5zwg_41tzO7vdPgH3dUFT_0WcOGf34V2xiJDfA" />
   <title>Academia Studio Energy - Musculação | Boxe | Yoga | Fit Dance - Peruíbe - SP</title>
+
+  <style>
+    .alert {
+      border-radius: 4px;
+      max-width: 400px;
+      background: red;
+      position: fixed;
+      font-size: 18px;
+      line-height: 1.3;
+      padding: 40px;
+      color: #fff;
+      bottom: 40px;
+      right: 40px;
+      z-index: 2000;
+    }
+
+    .alert a {
+      color: #fff;
+    }
+  </style>
 </head>
 
 <body>
+
+  <div class='alert'>
+    <p>Olá! nosso site está em construção, todas as informações apresentadas aqui são fictícias,
+      caso tenha alguma dúvida, entre em contato pelo WhatsApp: <a class="whatsapp">(11) 9 9785-3236</a>
+    </p>
+  </div>
 
   <header class="s-header">
     <div class="s-header__container">
@@ -324,18 +350,39 @@
       </h2>
       <div class="s-schedules__days">
         <ul class="s-schedules__days___list s-schedules__tabmenu">
-          <li><a class="s-btn" href="#horarios">segunda feira</a></li>
-          <li><a class="s-btn" href="#horarios">terça feira</a></li>
-          <li><a class="s-btn" href="#horarios">quarta feira</a></li>
-          <li><a class="s-btn" href="#horarios">quinta feira</a></li>
-          <li><a class="s-btn" href="#horarios">sexta feira</a></li>
+          <li class="s-schedules__days___item">
+            <a class="s-btn s-schedules__days___link" href="#horarios">
+              Segunda feira
+            </a>
+          </li>
+          <li class="s-schedules__days___item">
+            <a class="s-btn s-schedules__days___link" href="#horarios">
+              Terça feira
+            </a>
+          </li>
+          <li class="s-schedules__days___item">
+            <a class="s-btn s-schedules__days___link" href="#horarios">
+              Quarta feira
+            </a>
+          </li>
+          <li class="s-schedules__days___item">
+            <a class="s-btn s-schedules__days___link" href="#horarios">
+              Quinta feira
+            </a>
+          </li>
+          <li class="s-schedules__days___item">
+            <a class="s-btn s-schedules__days___link" href="#horarios">
+              Sexta feira
+            </a>
+          </li>
         </ul>
       </div>
 
       <div class="s-schedules__content s-schedules__tabcontent">
-        <section>
+        <section class="s-schedules__content___day">
+          <h4 class="s-schedules__content___day___title">Segunda Feira</h4>
           <ul>
-            <li class="s-schedules__content___item">
+            <li class="s-schedules__content___day___item">
               <h4>musculação</h4>
               <div class="s-schedules__content___time">
                 <p>horários</p>
@@ -344,7 +391,7 @@
               </div>
               <a class="s-btn whatsapp" href="">matricule-se já</a>
             </li>
-            <li class="s-schedules__content___item">
+            <li class="s-schedules__content___day___item">
               <h4>boxe</h4>
               <div class="s-schedules__content___time">
                 <p>horários</p>
@@ -353,7 +400,7 @@
               </div>
               <a class="s-btn whatsapp" href="">matricule-se já</a>
             </li>
-            <li class="s-schedules__content___item">
+            <li class="s-schedules__content___day___item">
               <h4>yoga</h4>
               <div class="s-schedules__content___time">
                 <p>horários</p>
@@ -365,9 +412,10 @@
           </ul>
         </section>
 
-        <section>
+        <section class="s-schedules__content___day">
+          <h4 class="s-schedules__content___day___title">Terça Feira</h4>
           <ul>
-            <li class="s-schedules__content___item">
+            <li class="s-schedules__content___day___item">
               <h4>musculação</h4>
               <div class="s-schedules__content___time">
                 <p>horários</p>
@@ -376,7 +424,7 @@
               </div>
               <a class="s-btn whatsapp" href="">matricule-se já</a>
             </li>
-            <li class="s-schedules__content___item">
+            <li class="s-schedules__content___day___item">
               <h4>boxe</h4>
               <div class="s-schedules__content___time">
                 <p>horários</p>
@@ -388,9 +436,10 @@
           </ul>
         </section>
 
-        <section>
+        <section class="s-schedules__content___day">
+          <h4 class="s-schedules__content___day___title">Quarta Feira</h4>
           <ul>
-            <li class="s-schedules__content___item">
+            <li class="s-schedules__content___day___item">
               <h4>musculação</h4>
               <div class="s-schedules__content___time">
                 <p>horários</p>
@@ -399,7 +448,7 @@
               </div>
               <a class="s-btn whatsapp" href="">matricule-se já</a>
             </li>
-            <li class="s-schedules__content___item">
+            <li class="s-schedules__content___day___item">
               <h4>yoga</h4>
               <div class="s-schedules__content___time">
                 <p>horários</p>
@@ -408,7 +457,7 @@
               </div>
               <a class="s-btn whatsapp" href="">matricule-se já</a>
             </li>
-            <li class="s-schedules__content___item">
+            <li class="s-schedules__content___day___item">
               <h4>fit dance</h4>
               <div class="s-schedules__content___time">
                 <p>horários</p>
@@ -420,9 +469,10 @@
           </ul>
         </section>
 
-        <section>
+        <section class="s-schedules__content___day">
+          <h4 class="s-schedules__content___day___title">Quinta Feira</h4>
           <ul>
-            <li class="s-schedules__content___item">
+            <li class="s-schedules__content___day___item">
               <h4>musculação</h4>
               <div class="s-schedules__content___time">
                 <p>horários</p>
@@ -431,7 +481,7 @@
               </div>
               <a class="s-btn whatsapp" href="">matricule-se já</a>
             </li>
-            <li class="s-schedules__content___item">
+            <li class="s-schedules__content___day___item">
               <h4>boxe</h4>
               <div class="s-schedules__content___time">
                 <p>horários</p>
@@ -440,7 +490,7 @@
               </div>
               <a class="s-btn whatsapp" href="">matricule-se já</a>
             </li>
-            <li class="s-schedules__content___item">
+            <li class="s-schedules__content___day___item">
               <h4>yoga</h4>
               <div class="s-schedules__content___time">
                 <p>horários</p>
@@ -452,9 +502,10 @@
           </ul>
         </section>
 
-        <section>
+        <section class="s-schedules__content___day">
+          <h4 class="s-schedules__content___day___title">Sexta Feira</h4>
           <ul>
-            <li class="s-schedules__content___item">
+            <li class="s-schedules__content___day___item">
               <h4>musculação</h4>
               <div class="s-schedules__content___time">
                 <p>horários</p>
@@ -463,7 +514,7 @@
               </div>
               <a class="s-btn whatsapp" href="">matricule-se já</a>
             </li>
-            <li class="s-schedules__content___item">
+            <li class="s-schedules__content___day___item">
               <h4>fit dance</h4>
               <div class="s-schedules__content___time">
                 <p>horários</p>
@@ -472,7 +523,7 @@
               </div>
               <a class="s-btn whatsapp" href="">matricule-se já</a>
             </li>
-            <li class="s-schedules__content___item">
+            <li class="s-schedules__content___day___item">
               <h4>yoga</h4>
               <div class="s-schedules__content___time">
                 <p>horários</p>
