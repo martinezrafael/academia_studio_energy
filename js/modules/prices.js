@@ -18,6 +18,6 @@ export default function resizeCarouselPrices() {
   if (document.body.clientWidth <= 800) {
     slidePrices(1);
   } else {
-    slidePrices(4);
+    slidePrices(3);
   }
 }
