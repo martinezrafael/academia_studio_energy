@@ -86,10 +86,9 @@
 }
 
 .s-payments__list {
-  align-items: center;
   color: #fff;
   display: flex;
-  gap: 20px;
+  gap: 16px;
 }
 
 .s-payments__item {
@@ -121,7 +120,10 @@
   .s-prices__container {
     width: 90%;
     margin: 0;
-    text-align: center;
+  }
+
+  .s-payment {
+    padding: 20px;
   }
 
   .s-payments__list {

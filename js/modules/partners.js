@@ -1,7 +1,7 @@
 function slidePartners(size) {
   new Swiper(".s-partners__carousel", {
     slidesPerView: size,
-    spaceBetween: 20,
+    spaceBetween: 40,
     pagination: {
       el: ".swiper-pagination",
       dynamicBullets: true,

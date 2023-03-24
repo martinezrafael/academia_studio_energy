@@ -27,14 +27,14 @@
   margin-bottom: 20px;
 }
 
-.s-opinions__list p {
+.s-opinions__list li p {
   color: #b8b8b8;
   font-size: 16px;
   line-height: 1.25;
   margin-bottom: 12px;
 }
 
-.s-opinions__list span {
+.s-opinions__list li span {
   font-size: 18px;
   font-weight: 600;
 }
@@ -51,8 +51,6 @@
   .s-opinions__container {
     width: 90%;
     margin: 0;
-
-    text-align: center;
   }
 
   .s-opinions__list {
@@ -69,5 +67,14 @@
 
   .s-opinions__list li img {
     width: 70%;
+  }
+
+  .s-opinions__list li p {
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .s-opinions__list li span {
+    font-size: 16px;
   }
 }

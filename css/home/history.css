@@ -21,16 +21,21 @@
 }
 
 @media (max-width: 800px) {
+  .s-history {
+    padding: 40px 0;
+  }
+
   .s-history__container {
+    gap: 0px;
     grid-template-columns: 1fr;
     width: 90%;
   }
 
   .s-history__content {
-    text-align: center;
+    text-align: justify;
   }
 
-  .s-history__image___wrapper {
+  .s-history__image___wrapper img {
     display: none;
   }
 }
