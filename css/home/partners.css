@@ -1,5 +1,4 @@
 .s-partners {
-  margin-bottom: 60px;
   width: 100%;
 }
 
@@ -10,14 +9,15 @@
 
 .s-partners__carousel___item {
   background: #141414;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
+  color: #fff;
+  height: 300px;
   padding: 20px;
   text-align: center;
-  color: #fff;
+  width: 400px;
 }
 
-.s-partners__carousel___item h3 {
+.s-partners__carousel___item___title {
   font-family: "Kanit", sans-serif;
   font-size: 32px;
   font-weight: 700;
@@ -26,25 +26,31 @@
   text-transform: uppercase;
 }
 
-.s-partners__carousel___item span {
-  color: #b8b8b8;
+.s-partners__carousel___item___profession {
   display: inline-block;
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 1.8;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 
-.s-partners__carousel___item p {
-  margin-bottom: 40px;
-  text-align: center;
+.s-partners__carousel___item___description {
+  font-size: 18px;
+  line-height: 1.11;
+  margin-bottom: 60px;
 }
 
 @media (max-width: 800px) {
-  .s-partners {
-    margin-bottom: 40px;
+  .s-s-partners {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .s-partners__container {
     width: 90%;
+    margin: 0;
   }
 }
