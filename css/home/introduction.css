@@ -1,31 +1,26 @@
 .s-introduction {
   background: #141414;
   box-shadow: inset 0px -120px #fff;
-  padding: 40px 0;
+  padding: 80px 0;
 }
-
 .s-introduction__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 20px;
   max-width: 1160px;
   margin: 0 auto;
 }
-
 .s-introduction__content {
   align-self: center;
 }
-
 @media (max-width: 800px) {
   .s-introduction {
     box-shadow: none;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-
   .s-introduction__container {
     grid-template-columns: 1fr;
     gap: 0;
@@ -33,7 +28,6 @@
     margin: 0;
     padding: 120px 0px 60px 0px;
   }
-
   .s-introduction__image {
     display: none;
   }

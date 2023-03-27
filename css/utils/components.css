@@ -60,6 +60,28 @@
   border: none;
 }
 
+/*tooltip */
+
+.tooltip::after {
+  content: attr(data-title);
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(0, 120px);
+
+  width: 90%;
+  line-height: 1.4em;
+  color: blue;
+}
+
+.tooltip:hover::after {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0, 50px);
+  transition: all 0.2s ease;
+}
+
 @media (max-width: 800px) {
   .s-title {
     font-size: 24px;
