@@ -5,3 +5,8 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
+
+.containerWidth {
+  max-width: 61%;
+  margin: auto;
+}

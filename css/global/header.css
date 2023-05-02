@@ -7,8 +7,6 @@
 }
 
 .se-header__container {
-  max-width: 61%;
-  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
