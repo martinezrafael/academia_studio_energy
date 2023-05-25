@@ -2,6 +2,7 @@
 @import "./global/global.css";
 @import "./utils/components.css";
 @import "./global/pace-theme-minimal.css";
+@import "./utils/navigation.css";
 @import "./global/header.css";
 @import "./global/origamid-menu.css";
 @import "./home/introduction.css";

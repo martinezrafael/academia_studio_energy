@@ -1,0 +1,10 @@
+.se-nav,
+.se-nav__menu {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.se-nav__menu___item {
+  text-transform: uppercase;
+}
